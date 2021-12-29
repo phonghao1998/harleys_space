@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="98" height="70" viewBox="0 0 98 70">
+  <g id="ic_arrown_detail_booking_active_back" transform="translate(0 -360)">
+    <rect id="bg_arrow" width="98" height="70" transform="translate(0 360)" fill="#fff"/>
+    <g id="ic_arrown_detail_booking_inactive" transform="translate(21.703 377)">
+      <g id="Group_138" data-name="Group 138">
+        <path id="Path_93" data-name="Path 93" d="M.338,102.951l17.28-17.28A1.152,1.152,0,0,1,19.247,87.3L3.933,102.613H54.145a1.152,1.152,0,1,1,0,2.3H3.933l15.314,15.314a1.152,1.152,0,1,1-1.629,1.629L.337,104.58A1.152,1.152,0,0,1,.338,102.951Z" transform="translate(0 -85.333)" fill="#750d1c"/>
+      </g>
+    </g>
+  </g>
+</svg>

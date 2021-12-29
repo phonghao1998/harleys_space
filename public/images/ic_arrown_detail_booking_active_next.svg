@@ -1,0 +1,8 @@
+<svg id="ic_arrown_detail_booking_active_next" xmlns="http://www.w3.org/2000/svg" width="98" height="70" viewBox="0 0 98 70">
+  <rect id="bg_arrow" width="98" height="70" fill="#fff"/>
+  <g id="ic_arrown_detail_booking_inactive" transform="translate(21 17)">
+    <g id="Group_138" data-name="Group 138">
+      <path id="Path_93" data-name="Path 93" d="M54.959,102.951,37.679,85.67A1.152,1.152,0,0,0,36.05,87.3l15.314,15.314H1.152a1.152,1.152,0,1,0,0,2.3H51.364L36.05,120.231a1.152,1.152,0,1,0,1.629,1.629l17.28-17.28A1.152,1.152,0,0,0,54.959,102.951Z" transform="translate(0 -85.333)" fill="#750d1c"/>
+    </g>
+  </g>
+</svg>

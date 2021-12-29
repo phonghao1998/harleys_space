@@ -1,0 +1,1038 @@
+/*Responsive*/
+
+@media all and (min-width: 1400px) and (max-width: 2000px) {
+	
+	.image-background.special img{
+		width: 100%;
+		height: 624px;
+	}
+}
+@media (min-width: 1200px){
+	.container {
+	    max-width: 100%;
+	}
+
+
+	#regions_div{
+		min-height: 627px;
+	}
+}
+
+@media all and (min-width: 1100px) and (max-width: 1200px) {
+	#regions_div{
+		min-height: 627px;
+	}
+
+	.table-weather table thead tr th .time-hour {
+	    font-size: 40px;
+	}
+
+	.table-weather table thead tr th .temperature {
+	    font-size: 80px;
+	    line-height: 80px;
+	}
+
+	#icon-summary {
+	    position: absolute;
+	    top: -18px;
+	    left: 32%;
+	}
+
+	#summary-info p {
+	    font-size: 15px;
+	    font-weight: bold;
+	    position: relative;
+	    top: 8px;
+	}
+}
+
+
+@media all and (max-width: 1099px) {
+	.dropdown-result-search{
+		margin: 0 3px;
+	}
+	#anywhere .lists .item {
+	    padding: 0 10px;
+	}
+	#header .nav-item {
+	    padding: 0px;
+	}
+
+	#regions_div{
+		min-height: 300px;
+	}
+	.group-submenu ul.link li a{
+		padding: 10px 0;
+	}
+	.template-detail-weekly-weather .detail.table-weather div.time {
+	     display: inline; 
+	     width: auto; 
+	    margin-top: 20px;
+	}
+	.template-detail-weekly-weather .detail.table-weather div.percent {
+	    padding-left: 10px;
+	}
+	.template-detail-weekly-weather .chance_of_rain:before{
+		left: -25px;
+	}
+	.table-weather table tbody tr td .info{
+		padding-left: 21px;
+	}
+	.template-detail-hourly-weather .detail.table-weather div.percent{
+		padding-left: 17px;
+	}
+	.template-detail-hourly-weather .chance_of_rain:before{
+		left: -48px;
+	}
+	.template-news .title h1, .template-about-us .title h1{
+		padding: 70px 0;
+	}
+	.template-faq .title {
+		height: auto;
+	}
+	.template-app .description-general .content {
+	    padding: 20px 0px;
+	}
+	.template-app .description-general .content img{
+		max-width: 40%;
+	}
+	.template-app .description-general .content img:last-child{
+		max-width: 33%;
+	}
+	.template-faq .search-holder {
+	    padding: 77px 0;
+	}
+	.template-faq .delete-btn img {
+	    top: -23px;
+	}
+	.template-faq .img-search {
+	    padding-top: 77px;
+	}
+	.address-search ul.link li{
+	    width: 100%;
+	}
+	.address-search .theme__menuItem__lyzBJ{
+		padding: 11.5px 15px; 
+	}
+	#slider-right{
+	    right: 2px;
+	}
+
+	#slider-left {
+		left: 2px;
+		z-index: 99;
+	}
+
+	.address-search ul.link li{
+		border-right: none;
+	}
+
+	.address-search ul.link li span.ellipsis {
+	    right: 30px;
+	}
+	.slider-control {
+	    top: 0px;
+	    font-size: 20px;
+	}
+	.address-search-toh ul.link li span.ellipsis{
+		right: 40px;
+	}
+
+	#currentHour {
+	    margin: 0px 0 0;
+	    font-size: 30px;
+	}
+
+	#currentAddress {
+	    font-size: 15px;
+	    text-align: center;
+	    margin: 10px 0 0;
+	}
+
+	.table-weather table thead tr th .temperature{
+		font-size: 80px;
+    	line-height: 80px;
+	}
+
+	#summary-info p {
+	    font-size: 15px;
+	    font-weight: bold;
+	    position: relative;
+	    top: 8px;
+	}
+
+	#icon-summary {
+	    position: absolute;
+	    top: -20px;
+	    left: 32%;
+	}
+
+	.table-weather table thead tr th .temperature {
+	    font-size: 70px;
+	    line-height: 70px;
+	}
+
+	#icon-summary {
+	    position: absolute;
+	    top: -26px;
+	    left: 32%;
+	}
+
+	#currentDate {
+	    margin: 10px 0 0;
+	}
+}
+
+@media all and (max-width: 992px) {
+	#regions_div{
+		min-height: 250px;
+	}
+	.radar-page .detail-radar .height, .radar-page .detail-radar .height iframe{
+		height: 320px;
+	}
+	.radar-page {
+	    padding: 0 0 30px 0px;
+	}
+	#myVideo{
+		display: none;
+	}
+	#myImage{
+		display: block;
+	}
+
+	#header{
+		z-index: 99999;
+		position: fixed;
+		width: 100%;
+	}
+
+	.box_1 .group-search{
+		margin-top: 70px;
+	}
+
+	#summary-info p {
+	    font-size: 15px;
+	    font-weight: bold;
+	    position: relative;
+	    top: 10px;
+	    display: none;
+	}
+
+	#icon-summary {
+	    position: absolute;
+	    top: -18px;
+	    left: 32%;
+	}
+
+	.table-weather table thead tr th .temperature {
+	    font-size: 60px;
+	    line-height: 60px;
+	}
+
+	#currentDate {
+	    margin: 6px 0;
+	}
+
+	.too-small{
+		font-size: 16px;
+		padding: 10px 0 0;
+	}
+}
+
+@media all and (max-width: 768px) { 
+	.w-item-news{
+		margin-top: 80px !important;
+	}
+	.banner-1,
+	.banner-2{
+		width: 100% !important;
+		height: auto !important;
+		min-height: 50px !important;
+		max-height: 120px !important;
+	}
+	.box_others .news {
+	    padding-bottom: 5px;
+	}
+	.box_others .news .child-detail {
+	    padding: 15px 10px 0 10px;
+	}
+	.template-faq .search-holder {
+	    padding: 50px 0;
+	}
+
+	.template-faq .delete-btn img {
+	    position: relative;
+	    top: -50px;
+	}
+
+	.template-faq .img-search {
+	    padding-top: 50px;
+	}
+	.template-news .title h1, .template-about-us .title h1 {
+	    padding: 38px 0;
+	    font-size: 40px;
+	}
+	.template-app .description-general .content{
+		padding: 70px 0;
+	}
+	.template-app .description-general .content p.desc {
+    	padding: 20px 0px;
+    }	
+	.template-app .description-detail .item{
+		padding-bottom: 30px;
+	}
+    .template-app .description-detail .item .content div{
+    	height: auto !important;
+    }
+    .template-app .description-detail .item .content h2{
+    	padding-bottom: 10px;
+    }
+
+	footer .footer .item{
+		margin-bottom: 10px;
+	}
+	footer .footer .item ul.link-app img{
+		width: 100%;
+	}
+	footer .footer .item h3{
+		font-size: 21px;
+	}
+	#header .navbar-nav{
+		line-height: 20px;
+	}
+	#header .navbar-nav .nav-link{
+		padding-left: 20px;
+	}
+/*	#header .custom-button{
+		margin: 10px 5px;
+	}
+	#header .custom-button{
+		display: none;
+	}*/
+
+	.table-weather table tbody tr td{
+		padding: 12px;
+	}
+
+	.box_2 .tab-content .tab-detail .item{
+		min-height: 175px;
+	}
+	#anywhere .title-box h2{
+		font-size: 25px;
+	}
+	footer .footer .item ul.link-app li{
+		width: 100%;
+	}
+	.template-detail-hourly-weather .detail.table-weather, .template-detail-weekly-weather .detail.table-weather{
+	    padding: 0 6px;
+	}
+	.template-detail-hourly-weather .temperature-hour{
+		font-size: 46px;
+		line-height: 100px;
+	}
+	.template-detail-hourly-weather .hour-in-day, .template-detail-weekly-weather .hour-in-day{
+	    font-size: 19px;
+	}
+	.template-detail-hourly-weather .summary-text, .template-detail-weekly-weather .summary-text{
+	    font-size: 15px;
+	}
+	.template-detail-hourly-weather .chance_of_rain:before {
+	    left: -20px;
+	}
+	.template-detail-hourly-weather .chance_of_rain:after, .template-detail-weekly-weather .chance_of_rain:after {
+	    right: 0px;
+	}
+	.template-detail-weekly-weather .chance_of_rain:before {
+	    left: -12px;
+	}
+	.table-weather{
+		margin-bottom: 0;
+	}
+
+	.box_2{
+		padding-bottom: 20px;
+	}
+	.box_others .trendding .item{
+		margin-bottom: 20px;
+	}
+
+
+	#header .mobile{
+		margin: 5px 0px 15px 15px;
+	}
+	#header .desktop{
+		display: none;
+	}
+	#myVideo{
+		display: none;
+	}
+	#myImage{
+		display: block;
+	}
+	
+	.image-background img{
+		max-width: 100%; 
+		height: 100%;
+	}
+
+	#header{
+		z-index: 9999999;
+		position: fixed;
+		width: 100%;
+		top: 0;
+	}
+
+	.template-news .title{
+		display: none;
+	}
+
+	.template-news-detail .title-articles h1{
+		margin-top:60px;
+	}
+
+	.box_1 .group-search{
+		margin-top: 80px;
+	}
+
+	.template-news-detail #detail-articles img{
+		width: 100%!important;height: 100%!important;
+	}
+
+	.template-faq .title #seach-form{
+		margin-top: 55px;
+	}
+	
+	.template-about-us .image-background, .template-faq .image-background, .template-news .image-background{
+		display: none;
+	}
+
+	#currentHour {
+	    margin: 0px 0 0;
+	    font-size: 26px;
+	}
+
+	.too-small{
+		font-size: 16px;
+		padding: 10px 0 0;
+	}
+}
+
+@media all and (max-width: 767px) {
+	body{
+		padding-top: 0;
+	}
+	.box_6 .title, .most-popular-widget .details{
+		padding-top: 10px;
+	}
+	.google-auto-placed{
+		display: none !important;
+	}
+	.w-item-news{
+		margin-top: 5px !important;
+	}
+	/*.adsbygoogle {
+		height: 90px !important;
+	}*/
+	.template-faq .search-holder {
+	    width: 86%;
+	}
+/*	.template-faq .delete-btn{
+		top: 87%;
+	}*/
+	.box_6 .calendar, .box_6 a, body,.address-search .theme__menuItem__lyzBJ, .box_others .news .item .title-special, #anywhere .lists .item .title, .btn-detail button, .template-news .desc, .template-faq .content .title-faq, .template-about-us .form-control,.template-about-us .btn-detail button, #setting-config, #setting-language-ok, #setting-config-ok, #setting-language, #summary-info p, #anywhere .item .title,.template-detail-hourly-weather .summary-text, .template-detail-weekly-weather .summary-text{
+		font-size: 12px !important;
+	}
+	.template-faq .content .title-faq{
+		font-weight: normal;
+	}
+	.box_others .news .item .title-special {
+	     position: inherit; 
+	}
+	.box_others .news .child-detail {
+	    padding: 0;
+	}
+	.box_others .news .child-detail .left{
+		padding-right: 0;
+	}
+	h1 ,h2, h3,.template-news-detail h1, .template-news h2 .text-title, .template-faq .content .title-category, #myLanguageSettings h4.modal-title,#myModalSettings h4.modal-title, footer .footer .item h3,#anywhere .title-box h2,.template-detail-weekly-weather .content .title .city span,.template-detail-weekly-weather .day-in-week{
+		font-size: 16px !important;
+	}
+	.template-app .description-detail .item {
+	    padding-bottom: 25px;
+	}
+	.template-app .description-detail .item .content h2{
+		font-size: 22px;
+		text-align: center;
+	    padding: 5px 0;
+	}
+	.template-app .description-detail {
+	    padding: 50px 0 25px 0;
+	}
+
+	.template-app .description-general .content{
+		padding: 70px 0;
+	}
+	.template-faq .search-holder {
+	    padding: 25px 0;
+	}
+
+	.template-faq .delete-btn img {
+	    top: -75px;
+	}
+	.template-faq .img-search {
+	    padding-top: 24px;
+	}
+	.template-faq .content {
+		margin: 10px 0;
+	}
+
+	.template-about-us .content p.desc {
+	    padding: 20px 0px;
+	}
+	.template-about-us .content form .btn-detail {
+	    padding-top: 10px;
+	}
+	.template-news .title h1, .template-about-us .title h1{
+		font-size: 28px;
+		padding: 30px 0;
+	}
+/*	#setting-language{
+	    position: absolute;
+	    display: block;
+	    left: 51px;
+	    top: 242px;
+	}*/
+
+	#header .custom-button{
+		padding: 4px 12px;	
+	}
+	#myModalSettings .modal-header,#myModalSettings .modal-body table tr td{
+		padding: 10px;
+	}
+	.template-news-detail {
+		margin: 0 0 20px 0;
+	}
+	.template-news .content .mb-5{
+		margin-bottom: 35px !important;
+	}
+	.template-news h2{
+		padding-top: 5px;
+		line-height: 16px;
+	}
+	.box_others h3, .template-detail-hourly-weather .content .title .city span,.template-detail-hourly-weather .content .title-time .time {
+	    font-size: 16px;
+	}
+	.box_3 .title-box {
+	    padding: 12px 0px 15px 0px;
+	}
+	.template-detail-hourly-weather .hour-in-day, .template-detail-weekly-weather .hour-in-day{
+		font-size: 15px;	
+	}
+	.template-detail-weekly-weather .chance_of_rain {
+	    margin-top: 23px;
+	}
+	.template-detail-weekly-weather .temperature-low {
+	    margin-top: 5px;
+	}
+	.template-detail-weekly-weather .temperature-day{
+		font-size: 25px;
+	}
+	.template-detail-hourly-weather .detail.table-weather div.percent, .template-detail-weekly-weather .detail.table-weather div.percent{
+	    font-size: 15px;
+	}
+	.template-detail-weekly-weather .content .title .city {
+	     padding: 10px 0; 
+	}
+	#header .logo-img{
+		width: 130px;
+	}
+	.radar-page .detail-radar .height, .radar-page .detail-radar .height iframe{
+		height: auto;
+	}
+	footer ul.social li a img{
+		padding-bottom: 0px;
+	}
+	.template-app .description-general .content img{
+		max-width: 35%;
+	}
+	.template-app .description-general .content .image-right img,.template-app .description-general .content .name{
+		display: none;
+	}
+
+	.box_others .trendding{
+		padding: 20px 0px;
+	}
+	.box_others h2{
+		font-size: 20px;
+		padding-bottom: 10px;
+	}
+
+	.box_others .news .child-detail .left{
+		width: 100%;
+		padding-bottom: 0;
+	}
+	.box_others .news .child-detail .right{
+		width: 100%;
+		padding: 10px 10px 0 10px;
+	}
+
+	footer .copyright .text-final{
+		margin: 6px 0px;
+	}
+
+	.table-weather table thead tr th .temperature{
+		font-size: 45px;
+	}
+	.table-weather table thead tr th .time-hour{
+		font-size: 27px;
+	}
+
+	.table-weather table thead tr th .temperature{
+		line-height: 40px;
+	}
+	.table-weather table tbody tr td img{
+		height: 25px;
+	}
+	.table-weather table tbody tr td img.ic_detail_cloud{
+		height: 15px;
+	}
+	.table-weather table tbody tr td img.ic_detail_ozone{
+		height: 19px;
+	}
+	img#icon-summary{
+		width: 50%;
+		height: auto;
+		left: 32%;
+		top: 0px;
+	}
+	#summary-info p{
+/*		top: 6px;*/
+		/*display: none;*/
+	}
+	.table-weather table tbody tr td .info{
+		padding-left: 8px;
+	}
+	footer .footer .item ul.link-app li:first-child{
+		width: 50%;
+		float: left;
+	}
+	footer .footer .item ul.link-app li:last-child{
+		width: 50%;
+		float: left;
+	}
+	.box_2 .tab-content .tab-detail .item img{
+		width: 50%;
+	}
+	#moon .moonphase-img{
+		height: auto;
+		margin-top: 0;
+	}
+	#moon .moonphase-img img{
+		width: 60%;
+	}
+	#moon .mt-5{
+		margin-top: 0px !important;
+	}
+	#anywhere .title-box img{
+		width: 8%;
+	}
+
+	.box_3 .item {
+	    padding-bottom: 5px;
+	}
+	footer h3 {
+	    padding-bottom: 5px;
+	}
+	footer .footer {
+	    padding: 15px 0px 5px 0px;
+	}
+
+	.template-detail-hourly-weather .image-day img, .template-detail-weekly-weather .image-day img{
+		height: 70px;
+	}
+	.template-detail-hourly-weather .content .time{
+		margin-top: 0px;
+	}
+	.template-detail-hourly-weather .temperature-hour {
+		font-size: 30px;
+		line-height: 20px;
+	}
+	.template-detail-hourly-weather .content .title .city {
+	    padding: 10px 0;
+	}
+	.template-detail-hourly-weather .chance_of_rain{
+		margin-top: 0;
+	}
+	#myLanguageSettings .modal-body table tr td img, #myModalSettings .modal-body table tr td img{
+		height: 25px;
+	}
+	#myModalSettings .modal-header, #myModalSettings .modal-body table tr td {
+	    padding: 6px 20px;
+	}
+	#myLanguageSettings .modal-header{
+		padding: 6px 20px;
+	}
+	#myLanguageSettings .modal-body table tr td{
+		padding: 6px 28px;
+	}
+	.template-app .description-detail img{
+		max-width: 60%;
+	}
+	#myVideo{
+		display: none;
+	}
+	.box_1.home-page .table-weather .table, .box_2,.box_4{
+		margin-bottom: 0;
+	}
+	.box_3 {
+	    padding-bottom: 20px;
+	}
+	.box_1.home-page .table-weather .table{
+		margin-bottom: 20px;
+	}
+	#anywhere .lists{
+		padding: 30px 0;
+	}
+	#anywhere .lists .item{
+		width: calc(100%/3);
+		padding: 0 10px;
+	}
+	#anywhere .lists .item {
+	    margin-bottom: 0px !important;
+	    min-height: 135px;
+	}
+	.box_1 .group-search .search-holder .delete-btn{
+		right: 5px;
+	}
+	#myVideo{
+		display: none;
+	}
+	#myImage{
+		display: block;
+	}
+	
+	.image-background img{
+		max-width: 100%; 
+		height: 100%;
+	}
+
+	#header{
+		z-index: 9999999;
+		position: fixed;
+		width: 100%;
+	}
+
+	.template-news .title{
+		display: none;
+	}
+
+	.template-news .content .container{
+		margin-top:70px;
+	}
+
+	.template-news-detail .title-articles h1{
+		margin-top:60px;
+	}
+
+	.box_1 .group-search{
+		margin-top: 70px;
+	}
+
+	.template-news-detail #detail-articles img{
+		width: 100%!important;height: 100%!important;
+	}
+
+	.template-faq .title #seach-form{
+		margin-top: 55px;
+	}
+
+	.template-about-us .image-background, .template-faq .image-background, .template-news .image-background{
+		display: none;
+	}
+	.template-news-detail .title-articles h1,.template-news-detail.trendding h1{
+		margin-top:40px;
+	}
+	#currentAddress {
+	    font-size: 13px;
+	    text-align: center;
+	    margin: 10px 0 0;
+	}
+
+	.too-small{
+		font-size: 16px;
+		padding: 10px 0 0;
+	}
+}
+
+@media (max-width: 480px) { 
+
+	.template-app .description-general .content p.desc{
+		padding: 0px;
+		font-size: 12px;
+	}
+	#header .form-inline{
+		width: 100%;
+	}
+	#header .form-inline .custom-dropbox{
+		margin-bottom: 10px;
+		width: 46%;
+	}
+	.box_2 ul li.nav-item a{
+		padding: 8px 5px;
+	}
+	.box_2 .tab-content #moon .table td, .box_2 .tab-content #moon .table th{
+		padding: 3px 5px !important;
+	}
+	
+	.table-weather table thead tr th .temperature{
+		font-size: 30px;
+	}
+	.table-weather table thead tr th .time-hour{
+		font-size: 15px;
+	}
+	.table-weather table tbody tr td img.ic_detail_cloud, .table-weather table tbody tr td img.ic_detail_ozone{
+		height: 15px;
+	}
+
+	.box_2 .tab-content .tab-detail .item {
+	    min-height: 138px;
+	}
+	.hourly-summary {
+	    min-height: 32px;
+	}
+	#anywhere .item {
+	    min-height: 120px;
+	}
+	#myVideo{
+		display: none;
+	}
+	#myImage{
+		display: block;
+	}
+
+/*	.image-background img{
+		height: 118px;
+	}*/
+	
+	.image-background img{
+		max-width: 100%; 
+		height: 100%;
+	}
+
+	.template-news .content{
+		padding: 13px 0;
+	}
+
+	#header{
+		z-index: 9999999;
+		position: fixed;
+		width: 100%;
+	}
+
+	.template-news .title{
+		display: none;
+	}
+
+	.template-news .content .container{
+		margin-top:70px;
+	}
+
+
+
+	.box_1 .group-search{
+		margin-top: 70px;
+	}
+
+	.template-news-detail #detail-articles img{
+		width: 100%!important;height: 100%!important;
+	}
+
+	.template-faq .title #seach-form{
+		margin-top: 55px;
+	}
+
+	.template-about-us .image-background, .template-faq .image-background, .template-news .image-background{
+		display: none;
+	}
+
+	#currentAddress {
+	    font-size: 13px;
+	    text-align: center;
+	    margin: 10px 0 0;
+	}
+
+	#currentHour {
+	    margin: 0px 0 0;
+	    font-size: 22px;
+	}
+
+	#currentDate{
+		margin: 10px 0 0;
+	}
+
+	.too-small{
+		font-size: 16px;
+		padding: 10px 0 0;
+	}
+}
+
+@media all and (max-width: 380px) {	
+	.banner-ads-fixed .col-right button.btn-light{
+		font-size: 10.5px !important;
+	}
+	.banner-ads-fixed .col-center .title-app{
+		font-size: 17px;
+	}	
+	#anywhere .lists .item {
+	    min-height: 120px;
+	}
+	.template-news .title h1, .template-about-us .title h1 {
+	    font-size: 18px;
+	}
+	.template-app .description-general .content{
+		padding: 70px 0;
+	}
+
+	.template-faq .search-holder {
+	    padding: 12px 0;
+	}
+	.template-faq .delete-btn {
+	    top: 58px;
+	}
+	.template-faq .delete-btn {
+	    right: 15%;
+	}
+	.template-faq .img-search {
+	    padding-top: 11px;
+	}
+
+	.table-weather table tbody tr td .info {
+	    padding-left: 3px;
+	}
+	.box_2 ul li.nav-item a {
+	    padding: 8px 0px;
+	}
+	.remove-le{
+		margin: 0;
+		padding: 0;
+	}
+	.table-weather table tbody tr td img{
+		height: 18px;
+	}
+	.table-weather table tbody tr td img.ic_detail_cloud, .table-weather table tbody tr td img.ic_detail_ozone{
+		height: 12px;
+	}
+	.template-detail-weekly-weather .temperature-day {
+	    font-size: 18px;
+	    line-height: inherit;
+	}
+	.template-detail-hourly-weather .detail.table-weather div.percent, .template-detail-weekly-weather .detail.table-weather div.percent{
+		padding-left: 2px;
+	}
+
+	.template-detail-hourly-weather .detail.table-weather .chance_of_rain img,.template-detail-weekly-weather .detail.table-weather .chance_of_rain img{
+		height: 19px;
+	}
+	.template-detail-hourly-weather .temperature-hour {
+    		font-size: 24px;
+	}
+
+	.chance_of_rain:before {
+	    left: -12px;
+	}
+	.table-weather table tbody tr td {
+	    padding: 8px;
+	}
+	.template-detail-hourly-weather .image-day img, .template-detail-weekly-weather .image-day img{
+		height: 40px;
+	}
+	.template-detail-weekly-weather .chance_of_rain,.template-detail-hourly-weather .chance_of_rain{
+		margin-top: 5px;
+	}
+	.template-detail-hourly-weather .chance_of_rain:after, .template-detail-weekly-weather .chance_of_rain:after {
+	    right: -8px;
+	}
+	.group-submenu ul.link li a{
+		font-size: 12px;
+	}
+	.template-news .title h1, .template-about-us .title h1 {
+	    padding: 15px 0;
+	}
+	.template-faq .search-holder {
+	    width: 85%;
+    }
+	.template-detail-hourly-weather .temperature-hour {
+	    line-height: 26px;
+	    font-size: 23px;
+	}
+/*	.image-background img{
+		height: 75px;
+	}*/
+
+	.image-background img{
+		max-width: 100%; 
+		height: 100%;
+	}
+	.template-about-us .title h1{
+		padding: 30px 0 2px;
+	}
+
+	.template-news .content{
+		padding: 13px 0;
+	}
+	#myVideo{
+		display: none;
+	}
+	#myImage{
+		display: block;
+	}
+
+	#header{
+		z-index: 9999999;
+		position: fixed;
+		width: 100%;
+	}
+
+	.template-news .title{
+		display: none;
+	}
+
+	.template-news .content .container{
+		margin-top:70px;
+	}
+
+	.box_1 .group-search{
+		margin-top: 70px;
+	}
+
+	.template-news-detail .title-articles h1{
+		margin-top:60px;
+	}
+
+	.template-app .image-background{
+		height: 230px;
+	}
+
+	.template-news-detail #detail-articles img{
+		width: 100%!important;height: 100%!important;
+	}
+
+	.template-faq .title #seach-form{
+		margin-top: 55px;
+	}
+
+	.template-about-us .image-background, .template-faq .image-background, .template-news .image-background{
+		display: none;
+	}
+
+	#summary-info p {
+	    font-weight: bold;
+	    position: relative;
+	    top: 0px;
+	}
+
+	#currentHour {
+	    margin: 0px 0 0;
+	    font-size: 20px;
+	}
+}
