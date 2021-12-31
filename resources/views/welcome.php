@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>      
     <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js" integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css" integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,6 +17,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
 
 </head>
 <body>
@@ -39,7 +45,7 @@
                             </button>
                             <div class="collapse navbar-collapse " id="navbarText">
                                 <ul class="navbar-nav mr">
-                                    <li class="nav-item nav-header  active ">
+                                    <li class="nav-item nav-header active ">
                                         <a class="nav-link text-capitalize" href="">ĐẶT PHÒNG</a>
                                     </li>
                                     <li class="nav-item nav-header ">
@@ -54,14 +60,9 @@
                                     </li>
                                 </ul>
                                 <div class="group-mobile">
-                                    <div class="group-search clearfix">
-                                        <div class="img-location" id="get-current-location">
-                                            <img src="/images/ic_location.png" width="30px" height="30px" alt="">
-                                        </div>
-                                    </div>
                                     <div class="mobile d-lg-none">
-                                        <span class="btn custom-button setting-config mb-setting" id="setting-config"><img src="/images/settings.png" style="width:23px" alt="settings"></span>
-                                        <span class="btn custom-button setting-config " id="setting-config"><img src="/images/settings.png" style="width:23px" alt="settings"></span>
+                                        <span class="btn custom-button setting-config" id="setting-config"><img src="/images/ic_history.svg" style="width:30px" alt="settings"></span>
+                                        <div class="btn custom-button setting-config" id="setting-config" style="background:#fff;"><img src="/images/ic_phone.svg" style="width:23px;" alt="settings"><span style="color:#000;">01234567</span></div> 
                                     </div>
                                     </div>
                                 </div>
@@ -105,20 +106,16 @@
                                     <img src="images/ic_people_home.svg" alt="">
                                     <span>Số lượng</span>
                                 </lable>
-                                <div class="select-model w-100">
-                                    <select id="select-state" placeholder="Pick a number">
-                                        <option selected>1</option>
-                                        <option >2</option>
-                                        <option >3</option>
-                                        <option >4</option>
-                                        <option >5</option>
-                                        <option >6</option>
-                                        <option >7</option>
-                                        <option >8</option>
-                                        <option >9</option>
-                                        <option >10</option>
-                                    
-                                    </select>
+                                <div class=" pick-number w-100">
+                                    <div class="subtract">
+                                        <button class="btn w-100 btn-subtract">-</button>
+                                    </div>
+                                    <div class="input-number">
+                                        <input type="text" class="text-center w-100 number-people" id="numberPeople" autocomplete="off" name="number" value="1">
+                                    </div>
+                                    <div class="plus">
+                                        <button class="btn w-100 btn-plus ">+</button>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-6">
@@ -211,6 +208,65 @@
                             </div>
                         </div>
                     </div>
+
+                    <script type="text/javascript">
+                        $('.btn-subtract').on("click", function(){
+                            let newValue;
+                            let oldValue = Number($('.number-people').val());
+                            if( oldValue > parseInt("1")) {
+                                newValue = oldValue - 1;
+                            } else {
+                                newValue = parseInt("1");
+                            }
+                            console.log(newValue);
+
+                            $('.number-people').val(newValue);
+                            checkNumber();
+                            
+                        });
+
+                        $('.btn-plus').on("click", function(){
+                            let newValue;
+                            let oldValue = Number($('.number-people').val());
+                            if( oldValue <parseInt("100")) {
+                                newValue = oldValue + 1;
+                            } else {
+                                alert("Số người không quá 100");
+                            }
+
+                            $('.number-people').val(newValue);
+                            checkNumber();
+                            
+                        });
+
+                        // if ($('.number-people').val() =="1") {
+                        //     $('.btn-subtract').addClass('hide-btn');
+                        // }
+
+                        // if ($('.number-people').val()=="100") {
+                        //     $('.btn-plus').addClass('hide-btn');
+                        // }
+
+                        // if (Number($('.number-people').val()) > 100) {
+                        //     alert("Số người không quá 100");
+                        // }
+
+                        checkNumber = function(){
+                            if ($('.number-people').val()<= 1) {
+                                $('.btn-subtract').addClass('hide-btn');
+                            }else {
+                                $('.btn-subtract').removeClass('hide-btn');
+                            }
+
+                            if ($('.number-people').val()>= 100) {
+                                $('.btn-plus').addClass('hide-btn');
+                                
+                            }else {
+                                $('.btn-plus').removeClass('hide-btn');
+                            }
+                        }
+                        
+                    </script>
                 </div>
             </div>
         </div>
@@ -709,10 +765,10 @@
     
     <div class="box4 mt-5">
         <div class="row no-gutters">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-lg-6">
                 <img src="images/png/img_experience_left.jpg" alt="" style="width:100%">
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-lg-6">
                 <div class="text-white bg box4-right" style="background-image:url(images/png/img_experience_right.jpg);height:100%;">
                     <h4>HARLEYS SPACE</h4>
                     <h3>Mang đến</h3>
@@ -930,16 +986,12 @@
 
     </style>
 </body>
-        <script src="jquery.min.js"></script>
-        <script src="owlcarousel/owl.carousel.min.js"></script>
-
-    <script>
+    <script type="text/javascript">
         $(document).ready(function () {
             $('select').selectize({
                 sortField: 'text'
             });
         });
-
     </script>
 </html>
 

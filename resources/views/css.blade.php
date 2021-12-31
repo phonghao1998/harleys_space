@@ -14404,7 +14404,7 @@
 
 	#anywhere .lists .item .title {
 		font-size: 14.5px;
-		margin-top: 10px;
+		margin-top: 20px;
 		font-weight: 500;
 		color: #192438;
 	}
@@ -17182,11 +17182,6 @@
 		}
 
 
-		#header .nav-item.active {
-			background-color: #f05822 !important;
-			color: #fff !important;
-		}
-
 		#header .nav-item.active a {
 			color: #fff !important;
 		}
@@ -17234,9 +17229,7 @@
 
 
 	@media (max-width:575px) {
-		.text-capitalize {
-			color: rgba(0, 0, 0, 0.7) !important;
-		}
+		
 
 		.nav.nav-tabs.desc-temp {
 			grid-gap: 0px;
@@ -17704,6 +17697,39 @@
 	
 	.text-2-down {
 		margin-top: 10px;
+	}
+
+	.pick-number {
+		border:1px solid #ccc;
+		border-radius:4px;
+		min-height:34px;
+		margin-top: 6px;
+		display:grid;
+		grid-template-columns:1fr 1fr 1fr;
+	}
+
+	.btn-subtract, .btn-plus {
+		background:#fff;
+		padding: 0;
+		height:100%;
+		outline:none;
+		border:none;
+	}
+
+	.btn-subtract:focus, .btn-plus:focus {
+		outline:none;
+		box-shadow:none;
+	}
+
+	#numberPeople {
+		height:100%;
+		border:none;
+		outline:none;
+	}
+
+	.hide-btn {
+		color:#fff;
+		cursor:auto!important;
 	}
 
 </style>

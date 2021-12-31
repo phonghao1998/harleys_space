@@ -11,12 +11,34 @@
 		.owl-carousel .owl-nav button.owl-next {
 			right: 4px!important;
 		}
+
+        .navbar-expand-lg .navbar-collapse {
+            background:#750d1c;
+            color: #fff;
+        }
+
+        #header .nav-item.active a {
+            color:#750d1c!important;
+        }
+
+        .navbar-expand-lg .navbar-collapse {
+            padding-top: 10px;
+        }
 	}
 
 	@media (max-width: 768px) {
         .right {
             text-align:left!important;
             margin-top: 20px;
+        }
+
+        .navbar-expand-lg .navbar-collapse {
+            background:#750d1c;
+            color: #fff;
+        }
+
+        #header .nav-item.active a {
+            color:#750d1c!important;
         }
     }
 
@@ -57,5 +79,14 @@
        .box1-right {
            padding:20px 14px;
        }
+
+       .navbar-expand-lg .navbar-collapse {
+            background:#750d1c;
+            color: #fff;
+        }
+
+        #header .nav-item.active a {
+            color:#750d1c!important;
+        }
 	}
 </style>
