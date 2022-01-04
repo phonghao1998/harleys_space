@@ -88,5 +88,17 @@
         #header .nav-item.active a {
             color:#750d1c!important;
         }
+
+        #service .box-2 .multi-card h5, #service .box-2 .multi-card p {
+            text-align: center!important;
+        }
+
+        .box-3-item1, .box-3-item4 {
+		    padding-left: 15px;
+        }
+
+        .box-3-item3, .box-3-item7 {
+            padding-right: 15px;
+        }
 	}
 </style>

@@ -40,17 +40,17 @@
                                 <div class="collapse navbar-collapse " id="navbarText">
                                     <ul class="navbar-nav mr">
                                         <li class="nav-item nav-header active ">
-                                            <a class="nav-link text-capitalize active" href="">ĐẶT PHÒNG</a>
+                                            <a class="nav-link text-capitalize " href="/">ĐẶT PHÒNG</a>
                                         </li>
                                         <li class="nav-item nav-header ">
-                                            <h2><a class="nav-link text-capitalize" href="">TIN TỨC</a></h2>
+                                            <a class="nav-link text-capitalize" href="/new">TIN TỨC</a>
                                         </li>
                                         <li class="nav-item nav-header ">
-                                            <h2><a class="nav-link text-capitalize" href="" rel="nofollow">DỊCH VỤ</a></h2>
+                                            <a class="nav-link text-capitalize" href="/service" rel="nofollow">DỊCH VỤ</a>
                                         </li>
                                     
                                         <li class="nav-item nav-header ">
-                                            <h2><a class="nav-link text-capitalize" href="">KHUYẾN MẠI</a></h2>
+                                            <a class="nav-link text-capitalize" href="/sale">KHUYẾN MẠI</a>
                                         </li>
                                     </ul>
                                     <div class="group-mobile">
@@ -72,6 +72,12 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript">
+        $('.nav-header').click(function() {
+            $('.nav-header').removeClass('active');
+            $(this).addClass('active');
+        })
+    </script>
 
     @yield('template')
 

@@ -17744,4 +17744,174 @@
 		min-height:38px;
 	}
 
+	/* service */ 
+
+	#service {
+		padding-top: 80px;
+	}
+
+	#service .banner {
+		background-image: url(images/img_services.jpg);
+		height:300px;
+	}
+
+	#service .banner h3 {
+		color: #fff;
+		font-size: 70px;
+		line-height: 300px;
+		font-family: initial;
+		letter-spacing: 2px;
+	}
+
+	#service .box-1 .name-web{
+		color:#c78f16;
+	}
+
+	#service .box-1 h3 {
+		font-size: 50px;
+		font-family: initial;
+		font-weight: bold;
+		letter-spacing: 3px;
+		margin-bottom: 20px;
+	}
+
+	.service-card {
+		padding:30px;
+		box-shadow: 0px 8px 18px #aeafb1;
+		border-radius:14px;
+		height:100%;
+	}
+
+	.service-card img {
+		max-width:100%;
+		height:170px;
+	}
+
+	.service-card-title {
+		font-weight:500;
+		font-family:initial;
+	}
+
+	.service-card-text {
+		color: rgba(0,0,0,0.5);
+	}
+
+	#service .multi-card h5 {
+		font-family: initial;
+    	font-weight: 600;
+	}
+
+	#service .multi-card {
+		padding: 0.25rem;
+	}
+
+	#service .box-2 h3 {
+		font-size: 50px;
+		font-family: initial;
+		font-weight: bold;
+		letter-spacing: 3px;
+		margin-bottom: 20px
+	}
+
+	#service .box-3 img{
+		width: 100%;
+	}
+
+	.box-3-item .box-3-item-img {
+		background-size:cover;
+		background-position:center;
+		height:380px;
+		background-repeat: no-repeat;
+	}
+
+	.box-3-item3 .box-3-item-img {
+		background-image: url(images/img_service_event_space_3.jpg);
+	}
+
+	.box-3-item4 .box-3-item-img {
+		background-image: url(images/img_service_event_space_4.jpg);
+	}
+	.box-3-item5 .box-3-item-img {
+		background-image: url(images/img_service_event_space_5.jpg)
+	}
+	.box-3-item6 .box-3-item-img {
+		background-image: url(images/img_service_event_space_6.jpg)
+	}
+	.box-3-item7 .box-3-item-img {
+		background-image: url(images/img_service_event_space_7.jpg);
+	}
+
+	#service .box-3 .row {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.box-3-item1, .box-3-item4 {
+		padding-left: 0;
+	}
+
+	.box-3-item3, .box-3-item7 {
+		padding-right: 0;
+	}
+	
+	.box-3-item2 .more-infomation h3 {
+		font-size: 30px;
+		font-weight: bold;
+		font-family: initial;
+		letter-spacing: 3px;
+	}
+
+	.box-3-item2 .more-infomation {
+		padding: 30px;
+		border:20px solid #955c2a;
+		height:100%;
+	}
+
+	/* sale */
+
+	#sale {
+		padding-top: 80px;
+	}
+
+	#sale .banner {
+		height:380px;
+		background-image:url(/images/img_discount.jpg);
+	}
+
+	#sale .banner h3 {
+		color: #fff;
+		font-size: 70px;
+		line-height: 300px;
+		font-family: initial;
+		letter-spacing: 2px;
+	}
+
+	#sale .sale-card {
+		border-radius: 10px;
+    	box-shadow: 0 2.8px 2.2px rgb(0 0 0 / 3%), 0 6.7px 5.3px rgb(0 0 0 / 4%), 0 12.5px 10px rgb(0 0 0 / 5%);
+		margin-top: 36px;
+	}
+
+	#sale .sale-card .card-content {
+		border:none;
+	}
+
+	/* new */
+
+	#new {
+		padding-top: 80px;
+	}
+
+	#new .banner {
+		background-image:url(images/img_news.jpg);
+	}
+
+	#new .banner h3 {
+		color: #fff;
+		font-size: 70px;
+		line-height: 300px;
+		font-family: initial;
+		letter-spacing: 2px;
+	}
+
 </style>
