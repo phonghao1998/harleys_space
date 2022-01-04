@@ -17198,7 +17198,7 @@
 		.navbar-expand-lg .navbar-collapse {
 			background: #fff;
 			padding: 0px 0px 10px 0px;
-			/* position: absolute; */
+			position: absolute;
 			width: 100%;
 			top: 100%;
 			z-index: 9;
@@ -17744,6 +17744,21 @@
 		min-height:38px;
 	}
 
+	.nav-small .nav-header {
+		color:white;
+	}
+
+	#navbarText {
+		background:#750d1c;
+		padding-bottom: 12px;
+		padding-top: 12px;
+		position:relative;
+		top:100%;
+		left:0;
+		right: 0;
+		z-index: 9999999;
+	}
+
 	/* service */ 
 
 	#service {
@@ -17912,6 +17927,30 @@
 		line-height: 300px;
 		font-family: initial;
 		letter-spacing: 2px;
+	}
+
+	#new .new-post img {
+		width: 100%;
+		border-radius:10px;
+	}
+
+	#new .new-post {
+		margin-bottom: 16px;
+	}
+
+	#new .new-post .new-post-time {
+		margin-top: 20px;
+		margin-bottom: 0;
+		color: #c78f16;
+	}
+
+	#new .new-post .new-post-title {
+		font-family: initial;
+		font-weight:500;
+	}
+
+	#new .new-post .new-post-text {
+		color:rgba(0, 0, 0,0.5);
 	}
 
 </style>
