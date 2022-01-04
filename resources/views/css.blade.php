@@ -17498,7 +17498,15 @@
 	}
 
 	#header {
-		padding: 5px 0;
+		position:fixed;
+		top: 0;
+		left: 0;
+		right:0;
+		z-index:99999999999;
+	}
+
+	.box1 {
+		padding-top: 80px;
 	}
 
 	.text-white {
@@ -17702,7 +17710,7 @@
 	.pick-number {
 		border:1px solid #ccc;
 		border-radius:4px;
-		min-height:34px;
+		min-height:38px;
 		margin-top: 6px;
 		display:grid;
 		grid-template-columns:1fr 1fr 1fr;
@@ -17730,6 +17738,10 @@
 	.hide-btn {
 		color:#fff;
 		cursor:auto!important;
+	}
+
+	.selectize-input {
+		min-height:38px;
 	}
 
 </style>
