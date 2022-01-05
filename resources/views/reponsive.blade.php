@@ -1,4 +1,15 @@
 <style>
+    @media (min-width:992px) {
+        .box4-right, .box-4-left-img {
+            height:570px!important;
+        }
+    }
+
+    @media (min-width:992px) and (max-width:1200px) {
+        .box4-right {
+            padding:24px;
+        }
+    }
     @media (max-width: 992px) {
 		.hide-mid {
 			display: none;

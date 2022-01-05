@@ -29,7 +29,7 @@
                         <div class=" w-100 mr-auto d-flex">
                             <div class="navbar navbar-expand-lg navbar-dark   w-100  p-0 mr-auto" style="height:80px;"> 
                                 <div class="logo ">
-                                    <a class="navbar-brand" href="">
+                                    <a class="navbar-brand" href="/">
                                         <img src="/images/logoHS.svg" class="logo-img d-inline-block align-top" alt="">
                                         <span>Harleys Space</span>
                                     </a>
@@ -37,9 +37,9 @@
                                 <button class="navbar-toggler mr-auto-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
-                                <div class="collapse navbar-collapse " id="">
+                                <div class="collapse navbar-collapse " id="navbarText">
                                     <ul class="navbar-nav mr">
-                                        <li class="nav-item nav-header active ">
+                                        <li class="nav-item nav-header ">
                                             <a class="nav-link text-capitalize " href="/">ĐẶT PHÒNG</a>
                                         </li>
                                         <li class="nav-item nav-header ">
@@ -55,13 +55,13 @@
                                     </ul>
                                     <div class="group-mobile">
                                         <div class="mobile d-lg-none">
-                                            <span class="btn custom-button setting-config" id="setting-config"><img src="/images/ic_history.svg" style="width:30px" alt="settings"></span>
+                                            <span class="btn custom-button setting-config" id="setting-config"><a href="/history"><img src="/images/ic_history.svg" style="width:30px" alt="settings"></a></span>
                                             <div class="btn custom-button setting-config" id="setting-config" style="background:#fff;"><img src="/images/ic_phone.svg" style="width:23px;" alt="settings"><span style="color:#000;">01234567</span></div> 
                                         </div>
                                         </div>
                                     </div>
                                     <div class="desktop">
-                                        <span class="btn custom-button setting-config" id="setting-config"><img src="/images/ic_history.svg" style="width:30px" alt="settings"></span>
+                                        <span class="btn custom-button setting-config" id="setting-config"><a href="/history"><img src="/images/ic_history.svg" style="width:30px" alt="settings"></a></span>
                                         <div class="btn custom-button setting-config" id="setting-config" style="background:#fff;"><img src="/images/ic_phone.svg" style="width:23px;" alt="settings"><span style="color:#000;">01234567</span></div>       
                                     </div>
                                 </div>
@@ -71,34 +71,7 @@
                 </div>
             </div>
         </div>
-        <div class="collapse navbar-collapse my-container " id="navbarText" style="padding-top:80px">
-            <ul class="navbar-nav mr nav-small ">
-                <li class="nav-item nav-header active ">
-                    <a class="nav-link text-capitalize " href="/">ĐẶT PHÒNG</a>
-                </li>
-                <li class="nav-item nav-header ">
-                    <a class="nav-link text-capitalize" href="/new">TIN TỨC</a>
-                </li>
-                <li class="nav-item nav-header ">
-                    <a class="nav-link text-capitalize" href="/service" rel="nofollow">DỊCH VỤ</a>
-                </li>
-            
-                <li class="nav-item nav-header ">
-                    <a class="nav-link text-capitalize" href="/sale">KHUYẾN MẠI</a>
-                </li>
-            </ul>
-            <div class="group-mobile">
-                <div class="mobile d-lg-none">
-                    <span class="btn custom-button setting-config" id="setting-config"><img src="/images/ic_history.svg" style="width:30px" alt="settings"></span>
-                    <div class="btn custom-button setting-config" id="setting-config" style="background:#fff;"><img src="/images/ic_phone.svg" style="width:23px;" alt="settings"><span style="color:#000;">01234567</span></div> 
-                </div>
-                </div>
-            </div>
-            <div class="desktop">
-                <span class="btn custom-button setting-config" id="setting-config"><img src="/images/ic_history.svg" style="width:30px" alt="settings"></span>
-                <div class="btn custom-button setting-config" id="setting-config" style="background:#fff;"><img src="/images/ic_phone.svg" style="width:23px;" alt="settings"><span style="color:#000;">01234567</span></div>       
-            </div>
-        </div>
+        
     </div>
     <script type="text/javascript">
         $('.nav-header').click(function() {
@@ -109,7 +82,7 @@
 
     @yield('template')
 
-    <footer style="background-color :#750d1c;color:#fff;" class="mt-5 pt-5">
+    <footer style="background-color :#750d1c;color:#fff;" class=" pt-5">
         <div class="container ">
             <div class="row ">
                 <div class="col-12 col-lg-5">
@@ -128,10 +101,10 @@
                         Khám phá
                     </p>
                     <ul class="list-info">
-                        <li><a href="">Đặt phòng</a></li>
-                        <li><a href="">Tin tức</a></li>
-                        <li><a href="">Dịch vụ</a></li>
-                        <li><a href="">Khuyến mại</a></li>
+                        <li><a href="/">Đặt phòng</a></li>
+                        <li><a href="/new">Tin tức</a></li>
+                        <li><a href="/service">Dịch vụ</a></li>
+                        <li><a href="/sale">Khuyến mại</a></li>
                     </ul>
                 </div>
                 <div class="col-12 col-lg-2">

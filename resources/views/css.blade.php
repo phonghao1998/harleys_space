@@ -17487,6 +17487,8 @@
 	.nav-header.active {
 		background-image : url(/images/bg_active_menu_110px.svg);
 		background-size:cover;
+		background-repeat: no-repeat;
+		background-position: center;
 	}
 
 	.nav-header .nav-link {
@@ -17748,17 +17750,6 @@
 		color:white;
 	}
 
-	#navbarText {
-		background:#750d1c;
-		padding-bottom: 12px;
-		padding-top: 12px;
-		position:relative;
-		top:100%;
-		left:0;
-		right: 0;
-		z-index: 9999999;
-	}
-
 	/* service */ 
 
 	#service {
@@ -17953,4 +17944,28 @@
 		color:rgba(0, 0, 0,0.5);
 	}
 
+	/* history */
+	#history {
+		background-image:url(images/img_home_hero.jpg);
+		height:600px;
+		display:flex;
+	}
+
+	#history .content-history {
+		padding:40px 60px;
+		background: #fff;
+		border-radius:12px;
+		margin:auto;
+	}
+
+	#history .content-history h4 {
+		font-family:initial;
+		font-weight:550;
+	}
+
+	#history .content-history .form-search-input {
+		padding:6px 10px;
+		border-radius:4px;
+		outline:none;
+	}
 </style>

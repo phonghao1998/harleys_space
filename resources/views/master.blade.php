@@ -60,7 +60,7 @@
                                 </lable>
                             </div>
                             <div class="col-6">
-                                <select id="select-state" placeholder="Pick start time">
+                                <select id="select-state" placeholder="Pick start time" class="time-start">
                                     <option selected>01:00</option>
                                     <option>02:00</option>
                                     <option>03:00</option>
@@ -78,7 +78,7 @@
                                 </select>
                             </div>
                             <div class="col-6">
-                                <select id="select-state" placeholder="Pick end time">
+                                <select id="select-state" placeholder="Pick end time" class="time-end">
                                     <option>01:00</option>
                                     <option>02:00</option>
                                     <option>03:00</option>
@@ -102,7 +102,7 @@
                                 </lable>
                             </div>
                             <div class="col-6">
-                                <select id="select-state" placeholder="Pick a city">
+                                <select id="select-state" placeholder="Pick a city" class="provide">
                                     <option selected>Tỉnh/Thành phố</option>
                                     <option >Hưng Yên</option>
                                     <option >Hà Nội</option>
@@ -112,7 +112,7 @@
                                 </select>
                             </div>
                             <div class="col-6">
-                                <select id="select-state" placeholder="Pick a city">
+                                <select id="select-state" placeholder="Pick a city" class="district">
                                     <option selected>Quận/Huyện</option>
                                     <option >Yên Mỹ</option>
                                     <option >Mỹ Hào</option>
@@ -146,7 +146,6 @@
                             } else {
                                 newValue = parseInt("1");
                             }
-                            console.log(newValue);
 
                             $('.number-people').val(newValue);
                             checkNumber();
@@ -194,6 +193,28 @@
                                 $(this).val(parseInt("100"))
                             }
                         })
+                        
+                        $('.btn-search').on('click', function(){
+                            let timeStart = Number((($('.time-start .item').attr('data-value')).split(''))[0]+(($('.time-start .item').attr('data-value')).split(''))[1]);
+                            let timeEnd = Number((($('.time-end .item').attr('data-value')).split(''))[0]+(($('.time-end .item').attr('data-value')).split(''))[1]);
+                            if (timeStart >= timeEnd) {
+                                alert('thời gian ko phù hợp')
+                            }
+                            
+                            let provide = $('.provide .item').attr('data-value');
+                            let district = $('.district .item').attr('data-value');
+                            if (provide == 'Tỉnh/Thành phố') {
+                                alert('Chọn Tỉnh/Thành phố');
+                            }    
+                            if (district == 'Quận/Huyện') {
+                                alert('Chọn Quận/Huyện');
+                            }
+                        })
+                        // $(document).ready(function(){
+                        //     var timeStart = Number((($('.time-start .item').attr('data-value')).split(''))[0]+(($('.time-start .item').attr('data-value')).split(''))[1]);
+                        //     var timeEnd = Number((($('.time-end .item').attr('data-value')).split(''))[0]+(($('.time-end .item').attr('data-value')).split(''))[1]);
+                        // })
+                        
                         
                     </script>
                 </div>
@@ -694,7 +715,7 @@
     <div class="box4 mt-5">
         <div class="row no-gutters">
             <div class="col-12 col-lg-6">
-                <img src="images/png/img_experience_left.jpg" alt="" style="width:100%">
+                <img src="images/png/img_experience_left.jpg" alt="" style="width:100%" class="box-4-left-img">
             </div>
             <div class="col-12 col-lg-6">
                 <div class="text-white bg box4-right" style="background-image:url(images/png/img_experience_right.jpg);height:100%;">

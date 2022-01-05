@@ -25,3 +25,6 @@ Route::get('/service', function () {
 Route::get('/sale', function () {
     return view('sale');
 });
+Route::get('/history', function () {
+    return view('history');
+});
