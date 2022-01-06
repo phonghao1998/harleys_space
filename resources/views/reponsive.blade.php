@@ -35,6 +35,11 @@
         .navbar-expand-lg .navbar-collapse {
             padding-top: 10px;
         }
+
+        .information .information-service {
+            grid-template-columns:1fr 1fr;
+            grid-gap:20px;
+        }
 	}
 
 	@media (max-width: 768px) {
@@ -51,9 +56,18 @@
         #header .nav-item.active a {
             color:#750d1c!important;
         }
+        .information .information-service {
+            grid-template-columns:1fr ;
+            grid-gap:20px;
+        }
+
+        .check-out .people, .check-out .price, .check-out .location {
+            display: none;
+        }
     }
 
 	@media(max-width:575px) {
+       
 		.img-name h4 {
 			font-size:16px;
 			letter-spacing:3px;

@@ -2,7 +2,7 @@
 @section('template')
 <link rel="stylesheet" href="/croll/perfect-scrollbar.css">
 <script src="/croll/perfect-scrollbar.js"></script>
-<div class="as" id="bookRoom">
+<div class="as" id="bookRoom" style="position: relative;">
     <div class="container">
         <div class="d-flex mt-5">
             <img src="/images/png/4f642cde3d0fa1d.jpg" alt="" class="mr-auto" style="max-width:80%;">
@@ -81,25 +81,25 @@
                         <h3 class="allready-service-title mb-3">Tiện ích sẵn có</h3>
                         <div class="row">
                             <div class="col-12 col-lg-2 col-md-6">
-                                <div class="item">
+                                <div class="item mt-3">
                                     <img src="images/7241bc026206eff.png" alt="">
                                     <p class="">Loa</p>
                                 </div>
                             </div>
                             <div class="col-12 col-lg-2 col-md-6">
-                                <div class="item">
+                                <div class="item mt-3">
                                     <img src="images/08572c6fb606ea4.png" alt="">
                                     <p class="">Điều hòa</p>
                                 </div>
                             </div>
                             <div class="col-12 col-lg-2 col-md-6">
-                                <div class="item">
+                                <div class="item mt-3">
                                     <img src="images/96ad7f5dc21ae41.jpg" alt="">
                                     <p class="">Máy chiếu</p>
                                 </div>
                             </div>
                             <div class="col-12 col-lg-2 col-md-6">
-                                <div class="item">
+                                <div class="item mt-3">
                                     <img src="images/57b7408ac139b51.jpg" alt="">
                                     <p class="">Micro</p>
                                 </div>
@@ -114,7 +114,7 @@
                         </h3>
                         <div class="row">
                             <div class="col-12 col-lg-2 col-md-6">
-                                <div class="item">
+                                <div class="item mt-3">
                                     <input type="checkbox" data-id="1">
                                     <img src="images/ic_choose_inactive.svg" alt="" class="not-checked">
                                     <img src="images/icons8-door_sensor_checked.png" alt="" class="checked d-none img-checked-1">
@@ -123,7 +123,7 @@
                                 </div>
                             </div>
                             <div class="col-12 col-lg-2 col-md-6">
-                                <div class="item">
+                                <div class="item mt-3">
                                     <input type="checkbox" data-id="2">
                                     <img src="images/ic_choose_inactive.svg" alt="" class="not-checked">
                                     <img src="images/icons8-door_sensor_checked.png" alt="" class="checked d-none img-checked-2">
@@ -379,15 +379,15 @@
     <div class="check-out bg">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 text-center" >
+                <div class="col-lg-3 text-center people">
                     <img src="images/ic_people_scroll_detail_booking.svg" alt="">
                     <h4 class="">200 người</h4>
                 </div>
-                <div class="col-lg-3 text-center" >
+                <div class="col-lg-3 text-center price" >
                     <img src="images/ic_money_scroll_detail_booking.svg" alt="">
                     <h4 class="total-price"></h4>
                 </div>
-                <div class="col-lg-3 text-center" >
+                <div class="col-lg-3 text-center location" >
                     <img src="images/ic_map_scroll_detail_booking.svg" alt="">
                     <h4 class="">số 317</h4>
                 </div>
@@ -445,10 +445,35 @@
             dots: false,
             infinite: false,
             speed: 300,
-            slidesToShow: 8,
-            slidesToScroll:8,
+            slidesToShow: 7,
+            slidesToScroll:7,
             adaptiveHeight: true,
             margin: 0,
+            arrows:false,
+            responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 5,
+                            slidesToScroll: 5,
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 4
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3
+                        }
+                    }
+
+            ]
         });
 
         $('.day').each(function() {
@@ -480,10 +505,35 @@
             dots: false,
             infinite: true,
             speed: 300,
-            slidesToShow: 8,
-            slidesToScroll:8,
+            slidesToShow: 7,
+            slidesToScroll:7,
             adaptiveHeight: true,
             margin: 0,
+            arrows:false,
+            responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 5,
+                            slidesToScroll: 5,
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 4
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3
+                        }
+                    }
+
+            ]
         });
 
         
