@@ -5,7 +5,7 @@
 <div class="as" id="bookRoom" style="position: relative;">
     <div class="container">
         <div class="d-flex mt-5">
-            <img src="/images/png/4f642cde3d0fa1d.jpg" alt="" class="mr-auto" style="max-width:80%;">
+            <button type="button" class="btn w-100" data-toggle="modal" data-target="#exampleModal"><img src="/images/png/4f642cde3d0fa1d.jpg" alt="" class="mr-auto" style="max-width:80%;"></button>
         </div>
         <div class="mt-5">
             <div class="slide-date">
@@ -394,6 +394,26 @@
                 <div class="col-lg-3 text-center col-12 d-flex">
                     <a class="btn btn-book">ĐẶT PHÒNG</a>
                 </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" style="padding-top:80px;" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="/images/png/4f642cde3d0fa1d.jpg" alt="" class="mr-auto" style="max-width:80%;">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                
+            </div>
             </div>
         </div>
     </div>
