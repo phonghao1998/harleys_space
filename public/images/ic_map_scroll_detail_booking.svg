@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38.31" height="50.201" viewBox="0 0 38.31 50.201">
+  <g id="ic_map_scroll_detail_booking" transform="translate(0.15 0.15)">
+    <g id="Group_2607" data-name="Group 2607" transform="translate(0)">
+      <g id="Group_2606" data-name="Group 2606">
+        <path id="Path_3542" data-name="Path 3542" d="M80.005,0A19.027,19.027,0,0,0,61,19.005c0,6.765,2.058,9.478,11.947,22.515,1.717,2.263,3.662,4.828,5.889,7.8a1.462,1.462,0,0,0,2.339,0c2.213-2.952,4.15-5.507,5.86-7.762C96.948,28.48,99.01,25.759,99.01,19.005A19.027,19.027,0,0,0,80.005,0Zm4.7,39.788C83.3,41.64,81.744,43.694,80,46c-1.751-2.326-3.317-4.391-4.728-6.252C65.657,27.072,63.924,24.787,63.924,19.005a16.081,16.081,0,1,1,32.163,0C96.087,24.776,94.349,27.068,84.7,39.788Z" transform="translate(-61)" fill="#fff" stroke="#fff" stroke-width="0.3"/>
+      </g>
+    </g>
+    <g id="Group_2609" data-name="Group 2609" transform="translate(8.772 8.772)">
+      <g id="Group_2608" data-name="Group 2608">
+        <path id="Path_3543" data-name="Path 3543" d="M161.234,90a10.234,10.234,0,1,0,10.234,10.234A10.245,10.245,0,0,0,161.234,90Zm0,17.543a7.31,7.31,0,1,1,7.31-7.31A7.318,7.318,0,0,1,161.234,107.543Z" transform="translate(-151 -90)" fill="#fff" stroke="#fff" stroke-width="0.3"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -28,3 +28,6 @@ Route::get('/sale', function () {
 Route::get('/history', function () {
     return view('history');
 });
+Route::get('/bookroom', function () {
+    return view('bookroom');
+});

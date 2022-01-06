@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="33.4" height="33.4" viewBox="0 0 33.4 33.4">
+  <g id="ic_money_detail_booking" transform="translate(0.2 0.2)">
+    <g id="Group_2611" data-name="Group 2611" transform="translate(0 0)">
+      <g id="Group_2610" data-name="Group 2610">
+        <path id="Path_3544" data-name="Path 3544" d="M28.167,4.833A16.5,16.5,0,0,0,4.833,28.167,16.5,16.5,0,0,0,28.167,4.833ZM16.5,31.066A14.566,14.566,0,1,1,31.066,16.5,14.583,14.583,0,0,1,16.5,31.066Z" transform="translate(0 0)" fill="#955c2a" stroke="#955c2a" stroke-width="0.4"/>
+      </g>
+    </g>
+    <g id="Group_2613" data-name="Group 2613" transform="translate(11.28 5.991)">
+      <g id="Group_2612" data-name="Group 2612">
+        <path id="Path_3545" data-name="Path 3545" d="M183.012,105.923H180.9a2.186,2.186,0,1,1,0-4.372h4.232a.988.988,0,1,0,0-1.975h-2.186V97.389a.988.988,0,0,0-1.975,0v2.186h-.07a4.162,4.162,0,1,0,0,8.323h2.116a2.186,2.186,0,0,1,0,4.372H178.78a.988.988,0,1,0,0,1.975h2.186v2.186a.988.988,0,0,0,1.975,0v-2.186h.07a4.162,4.162,0,0,0,0-8.323Z" transform="translate(-176.734 -96.401)" fill="#955c2a" stroke="#955c2a" stroke-width="0.4"/>
+      </g>
+    </g>
+  </g>
+</svg>

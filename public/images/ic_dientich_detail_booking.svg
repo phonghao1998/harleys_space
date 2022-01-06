@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="33.2" height="33.2" viewBox="0 0 33.2 33.2">
+  <g id="ic_dientich_detail_booking" transform="translate(0.1 0.1)">
+    <path id="XMLID_2301_" d="M33,5.824V0H27.176V1.941H5.824V0H0V5.824H1.941V27.176H0V33H5.824V31.059H27.176V33H33V27.176H31.059V5.824ZM29.118,27.176H27.176v1.941H5.824V27.176H3.882V5.824H5.824V3.882H27.176V5.824h1.941Z" fill="#955c2a" stroke="#955c2a" stroke-width="0.2"/>
+    <path id="XMLID_2302_" d="M0,0H10.606V2.121H0Z" transform="translate(8.008 15.508) rotate(-45)" fill="#955c2a" stroke="#955c2a" stroke-width="0.2"/>
+    <path id="XMLID_2303_" d="M0,0H10.606V2.121H0Z" transform="translate(15.988 23.49) rotate(-45)" fill="#955c2a" stroke="#955c2a" stroke-width="0.2"/>
+    <path id="XMLID_2304_" d="M0,0H16.969V2.121H0Z" transform="translate(9.748 21.749) rotate(-45)" fill="#955c2a" stroke="#955c2a" stroke-width="0.2"/>
+  </g>
+</svg>

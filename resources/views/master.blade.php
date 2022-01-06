@@ -197,18 +197,23 @@
                         $('.btn-search').on('click', function(){
                             let timeStart = Number((($('.time-start .item').attr('data-value')).split(''))[0]+(($('.time-start .item').attr('data-value')).split(''))[1]);
                             let timeEnd = Number((($('.time-end .item').attr('data-value')).split(''))[0]+(($('.time-end .item').attr('data-value')).split(''))[1]);
-                            if (timeStart >= timeEnd) {
-                                alert('thời gian ko phù hợp')
-                            }
-                            
                             let provide = $('.provide .item').attr('data-value');
                             let district = $('.district .item').attr('data-value');
-                            if (provide == 'Tỉnh/Thành phố') {
+                            if (timeStart >= timeEnd) {
+                                alert('thời gian ko phù hợp')
+                            } else  if (provide == 'Tỉnh/Thành phố') {
                                 alert('Chọn Tỉnh/Thành phố');
-                            }    
-                            if (district == 'Quận/Huyện') {
+                            } else if (district == 'Quận/Huyện') {
                                 alert('Chọn Quận/Huyện');
                             }
+
+                            
+                            // if (provide == 'Tỉnh/Thành phố') {
+                            //     alert('Chọn Tỉnh/Thành phố');
+                            // }    
+                            // if (district == 'Quận/Huyện') {
+                            //     alert('Chọn Quận/Huyện');
+                            // }
                         })
                         // $(document).ready(function(){
                         //     var timeStart = Number((($('.time-start .item').attr('data-value')).split(''))[0]+(($('.time-start .item').attr('data-value')).split(''))[1]);
@@ -235,7 +240,7 @@
                         <p>
                             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
                         </p>
-                        <a href="" class="btn-see-all btn">Xem thêm</a>
+                        <a href="/sale" class="btn-see-all btn">Xem thêm</a>
                     </div>
                 </div>
                 <div class="col-lg-8">
@@ -243,7 +248,7 @@
                         <div class="owl-stage-outer" style="position: relative;">
                             <div class="owl-stage">
                                 <div class="item owl-item">
-                                    <a class="card">
+                                    <a class="card" href="/bookroom">
                                         <img src="/images/png/4f642cde3d0fa1d.jpg" alt="">
                                         <div class="card-content">
                                             <h3 class="card-title">
@@ -269,7 +274,7 @@
                                     </a>
                                 </div>
                                 <div class="item owl-item">
-                                    <a class="card">
+                                    <a class="card" href="/bookroom">
                                         <img src="/images/png/4f642cde3d0fa1d.jpg" alt="">
                                         <div class="card-content">
                                             <h3 class="card-title">
@@ -295,7 +300,7 @@
                                     </a>
                                 </div>
                                 <div class="item owl-item">
-                                    <a class="card">
+                                    <a class="card" href="/bookroom">
                                         <img src="/images/png/4f642cde3d0fa1d.jpg" alt="">
                                         <div class="card-content">
                                             <h3 class="card-title">
@@ -321,7 +326,7 @@
                                     </a>
                                 </div>
                                 <div class="item owl-item">
-                                    <a class="card">
+                                    <a class="card" href="/bookroom">
                                         <img src="/images/png/4f642cde3d0fa1d.jpg" alt="">
                                         <div class="card-content">
                                             <h3 class="card-title">
@@ -347,7 +352,7 @@
                                     </a>
                                 </div>
                                 <div class="item owl-item">
-                                    <a class="card">
+                                    <a class="card" href="/bookroom">
                                         <img src="/images/png/4f642cde3d0fa1d.jpg" alt="">
                                         <div class="card-content">
                                             <h3 class="card-title">
@@ -373,7 +378,7 @@
                                     </a>
                                 </div>
                                 <div class="item owl-item">
-                                    <a class="card">
+                                    <a class="card" href="/bookroom">
                                         <img src="/images/png/4f642cde3d0fa1d.jpg" alt="">
                                         <div class="card-content">
                                             <h3 class="card-title">
@@ -399,7 +404,7 @@
                                     </a>
                                 </div>
                                 <div class="item owl-item">
-                                    <a class="card">
+                                    <a class="card" href="/bookroom">
                                         <img src="/images/png/4f642cde3d0fa1d.jpg" alt="">
                                         <div class="card-content">
                                             <h3 class="card-title">
@@ -443,7 +448,6 @@
                                 768: {
                                     items: 2
                                 }
-                                
                             }
                         })
                     </script>
@@ -766,7 +770,7 @@
                             </ul>
                         </div>
                         <div class="col-12 mt-5">
-                            <a href="" class="btn btn-see-more">Xem thêm</a>
+                            <a href="/service" class="btn btn-see-more">Xem thêm</a>
                         </div>
                     </div>
                 </div>

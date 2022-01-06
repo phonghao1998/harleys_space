@@ -17968,4 +17968,122 @@
 		border-radius:4px;
 		outline:none;
 	}
+
+	/* bookroom */
+	#bookRoom {
+		padding-top: 80px;
+	}
+
+	.slide-date .day {
+		font-size:26px;
+		border-radius:6px;
+		font-family:initial;
+		text-align:center;
+		padding: 35px 0;
+	}
+
+	.slide-date .day.active {
+		background: #955c2a;
+		color: #fff;
+	}
+
+	.slide-time .hours {
+		display:inline-block;
+		color:#750d1c;
+		text-align:center;
+		border:1px solid ;
+		padding:12px 0;
+	}
+
+	.slide-time .hours.active {
+		background: #955c2a;
+		color:#fff;
+		border:1px solid #955c2a;
+	}
+
+	.information .information-service {
+		display:grid;
+		grid-template-columns:1fr 1fr 1fr 1fr ;
+		grid-gap:20px;
+	}
+
+	.information .information-service span {
+		font-size:22px;
+		margin-left: 8px;
+		margin-top: 4px;
+	}
+
+	.information .title {
+		font-family: initial;
+		font-size:36px;
+		font-weight:600;
+	}
+
+	.allready-service .item img, .more-service .item img {
+		height:73px;
+		width: 73px;
+		margin-bottom: 10px;
+	}
+
+	.allready-service .item p, .more-service .item p {
+		font-size:18px;
+		margin-bottom: 0px;
+	}
+
+	.allready-service .item, .more-service .item {
+		background-color: #eaeaea;
+		border-radius:6px;
+		text-align: center;
+		padding:26px 0;
+		position: relative;
+	}
+
+	.more-service .item img.checked, .more-service .item img.not-checked {
+		height:24px;
+		width:24px;
+		position:absolute;
+		top:8px;
+		right:8px;
+	}
+
+	.more-service .item input {
+		height:100%;
+		width:100%;
+		position:absolute;
+		left:0;
+		top:0;
+		opacity: 0;
+		z-index: 999;
+	}
+
+	.more-service-title, .allready-service-title {
+		font-size:30px;
+		font-family:initial;
+		font-weight:600;
+		text-align:left;
+	}
+
+	#bookRoom .check-out {
+		background-image:url(images/bg_scroll_detail_booking.svg);
+		padding:20px 0;
+		color:#fff;
+	}
+
+	#bookRoom .check-out img {
+		height:30px;
+		width:30px;
+	}
+
+	#bookRoom .check-out h4 {
+		margin-bottom: 0;
+		margin-top: 8px;
+	}
+	
+	#bookRoom .check-out .btn-book {
+		color:#955c2a;
+		background:#fff;
+		font-weight:500;
+		margin:auto;
+	}
+	
 </style>

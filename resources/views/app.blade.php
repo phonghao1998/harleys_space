@@ -20,7 +20,7 @@
 
 </head>
 <body>
-    
+    @include ('css')
     <div id="header" style="background-color :#750d1c; height:80px;">
         <div class="my-container">
             <div class="">
@@ -164,7 +164,7 @@
             display:inline-block;
         }
     </style>
-    @include ('css')
+    
     @include ('reponsive')
 </body>
 </html>
