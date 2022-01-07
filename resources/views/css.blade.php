@@ -17713,7 +17713,6 @@
 		border:1px solid #ccc;
 		border-radius:4px;
 		min-height:38px;
-		margin-top: 6px;
 		display:grid;
 		grid-template-columns:1fr 1fr 1fr;
 	}

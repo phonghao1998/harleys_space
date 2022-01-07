@@ -24,7 +24,7 @@
                         <div class="row">
                             <div class="col-6">
                                 <lable class="lable-item mb-3">
-                                    <img src="images/ic_people_home.svg" alt="">
+                                    <img src="images/ic_people_home.svg" alt="" style="margin-bottom:8px;">
                                     <span>Số lượng</span>
                                 </lable>
                                 <div class=" pick-number w-100">
@@ -41,7 +41,7 @@
                             </div>
                             <div class="col-6">
                                 <lable class="lable-item " >
-                                    <img src="images/ic_date_home.svg" alt="" style="margin-bottom:9px;">
+                                    <img src="images/ic_date_home.svg" alt="" style="margin-bottom:8px;">
                                     <span>Ngày</span>
                                 </lable>
                                 <select id="select-date" placeholder="Pick a date" >
@@ -211,10 +211,10 @@
                         $("#select-provide").select2({
                             placeholder: "Select a provide",
                             dropdownPosition: 'below',
-                        });
+                        })
                         $("#select-district").select2({
                             placeholder: "Select a district",
-                            dropdownPosition: 'below',
+                            dropdownPosition: 'below',                   
                         });
 
                         var curr = new Date;
@@ -242,7 +242,6 @@
                             var html = '';
                             html += '<option value="' + i + '">' + ('0' + i).slice(-2) + ":00" + '</option>'; 
                             $('#select-time-start').append(html);
-                            console.log(html);
                         }
 
                         for (var i = currHours +1 ; i < 24; i++) {
@@ -250,9 +249,6 @@
                             html += '<option value="' + i + '">' + ('0' + i).slice(-2) + ":00" + '</option>'; 
                             $('#select-time-end').append(html);
                         }
-
-                        
-                        
 
                         $('.btn-subtract').on("click", function(){
                             let newValue;
@@ -262,11 +258,9 @@
                             } else {
                                 newValue = parseInt("1");
                             }
-
                             $('.number-people').val(newValue);
                             checkNumber();
-                            return false;
-                            
+                            return false; 
                         });
 
                         $('.btn-plus').on("click", function(){
