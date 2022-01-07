@@ -40,88 +40,50 @@
                                 </div>
                             </div>
                             <div class="col-6">
-                                <lable class="lable-item ">
-                                    <img src="images/ic_date_home.svg" alt="">
+                                <lable class="lable-item " >
+                                    <img src="images/ic_date_home.svg" alt="" style="margin-bottom:9px;">
                                     <span>Ngày</span>
                                 </lable>
-                                <select id="select-state" placeholder="Pick a date">
-                                    <option selected>31-12-2021</option>
-                                    <option >30-12-2021</option>
-                                    <option >29-12-2021</option>
-                                    <option >28-12-2021</option>
-                                    <option >27-12-2021</option>
-                                    <option >26-12-2021</option>
+                                <select id="select-date" placeholder="Pick a date" >
+                                    
                                 </select>
                             </div>
-                            <div class="col-12">
+                            <div class="col-12 mt-4" style="padding-bottom: 6px;">
                                 <lable class="lable-item ">
                                     <img src="images/ic_time_home.svg" alt="">
                                     <span>Thời gian</span>
                                 </lable>
                             </div>
                             <div class="col-6">
-                                <select id="select-state" placeholder="Pick start time" class="time-start">
-                                    <option selected>01:00</option>
-                                    <option>02:00</option>
-                                    <option>03:00</option>
-                                    <option>04:00</option>
-                                    <option>05:00</option>
-                                    <option>06:00</option>
-                                    <option>07:00</option>
-                                    <option>08:00</option>
-                                    <option>09:00</option>
-                                    <option>10:00</option>
-                                    <option>11:00</option>
-                                    <option>12:00</option>
-                                    <option>13:00</option>
-                                    <option>14:00</option>
+                                <select id="select-time-start" placeholder="Pick start time" class="time-start">
+                                    
                                 </select>
                             </div>
                             <div class="col-6">
-                                <select id="select-state" placeholder="Pick end time" class="time-end">
-                                    <option>01:00</option>
-                                    <option>02:00</option>
-                                    <option>03:00</option>
-                                    <option>04:00</option>
-                                    <option selected>05:00</option>
-                                    <option>06:00</option>
-                                    <option>07:00</option>
-                                    <option>08:00</option>
-                                    <option>09:00</option>
-                                    <option>10:00</option>
-                                    <option>11:00</option>
-                                    <option>12:00</option>
-                                    <option>13:00</option>
-                                    <option>14:00</option>
+                                <select id="select-time-end" placeholder="Pick end time" class="time-end">
+                                   
                                 </select>
                             </div>
-                            <div class="col-12">
+                            <div class="col-12 mt-4" style="padding-bottom: 6px;">
                                 <lable class="lable-item">
                                     <img src="images/ic_map_home.svg" alt="">
                                     <span>Chọn địa điểm</span>
                                 </lable>
                             </div>
                             <div class="col-6">
-                                <select id="select-state" placeholder="Pick a city" class="provide">
-                                    <option selected>Tỉnh/Thành phố</option>
-                                    <option >Hưng Yên</option>
-                                    <option >Hà Nội</option>
-                                    <option >Hải Dương</option>
-                                    <option >Bắc Ninh</option>
-                                    <option >Bắc Giang</option>
-                                </select>
+                            <select name="calc_shipping_provinces" required="" id="select-provide">
+                                <option value="">Tỉnh / Thành phố</option>
+                            </select>
+                            <input class="billing_address_1" name="" type="hidden" value="">
+                            
                             </div>
                             <div class="col-6">
-                                <select id="select-state" placeholder="Pick a city" class="district">
-                                    <option selected>Quận/Huyện</option>
-                                    <option >Yên Mỹ</option>
-                                    <option >Mỹ Hào</option>
-                                    <option >Ân Thi</option>
-                                    <option >Kim Động</option>
-                                    <option >Tiên Lữ</option>
-                                </select>
+                            <select name="calc_shipping_district" required="" id="select-district">
+                                <option value="">Quận / Huyện</option>
+                            </select>
+                            <input class="billing_address_2" name="" type="hidden" value="">
                             </div>
-                            <div class="col-12">
+                            <div class="col-12 mt-4">
                                 <button class="btn btn-search w-100 text-white mt-3" style="background:#955c2a">
                                     <img src="images/ic_search.svg" alt="">
                                     <span class="">TÌM KIẾM</span>
@@ -131,12 +93,166 @@
                     </div>
 
                     <script type="text/javascript">
+                        (function($) {
 
-                        $(document).ready(function () {
-                            $('select').selectize({
-                                sortField: 'text'
+                            var Defaults = $.fn.select2.amd.require('select2/defaults');
+
+                            $.extend(Defaults.defaults, {
+                            dropdownPosition: 'auto'
                             });
+
+                            var AttachBody = $.fn.select2.amd.require('select2/dropdown/attachBody');
+
+                            var _positionDropdown = AttachBody.prototype._positionDropdown;
+
+                            AttachBody.prototype._positionDropdown = function() {
+
+                            var $window = $(window);
+
+                                var isCurrentlyAbove = this.$dropdown.hasClass('select2-dropdown--above');
+                                var isCurrentlyBelow = this.$dropdown.hasClass('select2-dropdown--below');
+
+                                var newDirection = null;
+
+                                var offset = this.$container.offset();
+
+                                offset.bottom = offset.top + this.$container.outerHeight(false);
+                                
+                                var container = {
+                                    height: this.$container.outerHeight(false)
+                                };
+
+                            container.top = offset.top;
+                            container.bottom = offset.top + container.height;
+
+                            var dropdown = {
+                            height: this.$dropdown.outerHeight(false)
+                            };
+
+                            var viewport = {
+                            top: $window.scrollTop(),
+                            bottom: $window.scrollTop() + $window.height()
+                            };
+
+                            var enoughRoomAbove = viewport.top < (offset.top - dropdown.height);
+                            var enoughRoomBelow = viewport.bottom > (offset.bottom + dropdown.height);
+
+                            var css = {
+                            left: offset.left,
+                            top: container.bottom
+                            };
+
+                            // Determine what the parent element is to use for calciulating the offset
+                            var $offsetParent = this.$dropdownParent;
+
+                            // For statically positoned elements, we need to get the element
+                            // that is determining the offset
+                            if ($offsetParent.css('position') === 'static') {
+                            $offsetParent = $offsetParent.offsetParent();
+                            }
+
+                            var parentOffset = $offsetParent.offset();
+
+                            css.top -= parentOffset.top
+                            css.left -= parentOffset.left;
+
+                            var dropdownPositionOption = this.options.get('dropdownPosition');
+
+                                if (dropdownPositionOption === 'above' || dropdownPositionOption === 'below') {
+
+                                    newDirection = dropdownPositionOption;
+
+                            } else {
+                                    
+                                if (!isCurrentlyAbove && !isCurrentlyBelow) {
+                                        newDirection = 'below';
+                                    }
+
+                                    if (!enoughRoomBelow && enoughRoomAbove && !isCurrentlyAbove) {
+                                    newDirection = 'above';
+                                    } else if (!enoughRoomAbove && enoughRoomBelow && isCurrentlyAbove) {
+                                    newDirection = 'below';
+                                    }
+
+                            }
+
+                            if (newDirection == 'above' ||
+                                (isCurrentlyAbove && newDirection !== 'below')) {
+                            css.top = container.top - parentOffset.top - dropdown.height;
+                            }
+
+                            if (newDirection != null) {
+                            this.$dropdown
+                                .removeClass('select2-dropdown--below select2-dropdown--above')
+                                .addClass('select2-dropdown--' + newDirection);
+                            this.$container
+                                .removeClass('select2-container--below select2-container--above')
+                                .addClass('select2-container--' + newDirection);
+                            }
+
+                            this.$dropdownContainer.css(css);
+
+                            };
+
+                        })(window.jQuery);
+
+                        $("#select-date").select2({
+                                placeholder: "Select a date",
+                                dropdownPosition: 'below',
+                            });
+                        $("#select-time-start").select2({
+                            placeholder: "Select a time start",
+                            dropdownPosition: 'below',
                         });
+                        $("#select-time-end").select2({
+                            placeholder: "Select a end",
+                            dropdownPosition: 'below',
+                        });
+                        $("#select-provide").select2({
+                            placeholder: "Select a provide",
+                            dropdownPosition: 'below',
+                        });
+                        $("#select-district").select2({
+                            placeholder: "Select a district",
+                            dropdownPosition: 'below',
+                        });
+
+                        var curr = new Date;
+                        var first = curr.getDate() + 1;
+                        var mm = String(curr.getMonth() + 1).padStart(2, '0'); 
+                        var checkPoint = 0;
+                        var html = '';
+                        var date_v = '14/01/2022'
+                        for (var i = -1; i <= 12+1; i++) {
+                            var next = new Date(curr.getTime());
+                            next.setDate(first + i);
+                            mm = String(next.getMonth() + 1).padStart(2, '0');
+                            let dayweeks = next.toString().split(" ");
+                            var temp_d = String(next.getDate()).padStart(2, '0')+'-'+mm+'-'+next.getFullYear();
+                            if(temp_d==date_v && !checkPoint){
+                                checkPoint+=i+1;
+                            }
+                            html += '<option class="" val="'+temp_d+'">' + temp_d +  '</option>'; 
+                           
+                        }
+                        $('#select-date').append(html);
+
+                        var currHours = curr.getHours();
+                        for (var i = currHours; i < 24; i++) {
+                            var html = '';
+                            html += '<option value="' + i + '">' + ('0' + i).slice(-2) + ":00" + '</option>'; 
+                            $('#select-time-start').append(html);
+                            console.log(html);
+                        }
+
+                        for (var i = currHours +1 ; i < 24; i++) {
+                            var html = '';
+                            html += '<option value="' + i + '">' + ('0' + i).slice(-2) + ":00" + '</option>'; 
+                            $('#select-time-end').append(html);
+                        }
+
+                        
+                        
 
                         $('.btn-subtract').on("click", function(){
                             let newValue;
@@ -195,8 +311,8 @@
                         })
                         
                         $('.btn-search').on('click', function(){
-                            let timeStart = Number((($('.time-start .item').attr('data-value')).split(''))[0]+(($('.time-start .item').attr('data-value')).split(''))[1]);
-                            let timeEnd = Number((($('.time-end .item').attr('data-value')).split(''))[0]+(($('.time-end .item').attr('data-value')).split(''))[1]);
+                            let timeStart = Number($('.time-start .item').attr('data-value'));
+                            let timeEnd = Number($('.time-end .item').attr('data-value'));
                             let provide = $('.provide .item').attr('data-value');
                             let district = $('.district .item').attr('data-value');
                             if (timeStart >= timeEnd) {
@@ -206,19 +322,79 @@
                             } else if (district == 'Quận/Huyện') {
                                 alert('Chọn Quận/Huyện');
                             }
-
-                            
-                            // if (provide == 'Tỉnh/Thành phố') {
-                            //     alert('Chọn Tỉnh/Thành phố');
-                            // }    
-                            // if (district == 'Quận/Huyện') {
-                            //     alert('Chọn Quận/Huyện');
-                            // }
                         })
-                        // $(document).ready(function(){
-                        //     var timeStart = Number((($('.time-start .item').attr('data-value')).split(''))[0]+(($('.time-start .item').attr('data-value')).split(''))[1]);
-                        //     var timeEnd = Number((($('.time-end .item').attr('data-value')).split(''))[0]+(($('.time-end .item').attr('data-value')).split(''))[1]);
-                        // })
+                        
+                        //<![CDATA[
+                        if (address_2 = localStorage.getItem('address_2_saved')) {
+                        $('select[name="calc_shipping_district"] option').each(function() {
+                            if ($(this).text() == address_2) {
+                            $(this).attr('selected', '')
+                            }
+                        })
+                        $('input.billing_address_2').attr('value', address_2)
+                        }
+                        if (district = localStorage.getItem('district')) {
+                        $('select[name="calc_shipping_district"]').html(district)
+                        $('select[name="calc_shipping_district"]').on('change', function() {
+                            var target = $(this).children('option:selected')
+                            target.attr('selected', '')
+                            $('select[name="calc_shipping_district"] option').not(target).removeAttr('selected')
+                            address_2 = target.text()
+                            $('input.billing_address_2').attr('value', address_2)
+                            district = $('select[name="calc_shipping_district"]').html()
+                            localStorage.setItem('district', district)
+                            localStorage.setItem('address_2_saved', address_2)
+                        })
+                        }
+                        $('select[name="calc_shipping_provinces"]').each(function() {
+                        var $this = $(this),
+                            stc = ''
+                        c.forEach(function(i, e) {
+                            e += +1
+                            stc += '<option value=' + e + '>' + i + '</option>'
+                            $this.html('<option value="">Tỉnh / Thành phố</option>' + stc)
+                            if (address_1 = localStorage.getItem('address_1_saved')) {
+                            $('select[name="calc_shipping_provinces"] option').each(function() {
+                                if ($(this).text() == address_1) {
+                                $(this).attr('selected', '')
+                                }
+                            })
+                            $('input.billing_address_1').attr('value', address_1)
+                            }
+                            $this.on('change', function(i) {
+                            i = $this.children('option:selected').index() - 1
+                            var str = '',
+                                r = $this.val()
+                            if (r != '') {
+                                arr[i].forEach(function(el) {
+                                str += '<option value="' + el + '">' + el + '</option>'
+                                $('select[name="calc_shipping_district"]').html('<option value="">Quận / Huyện</option>' + str)
+                                })
+                                var address_1 = $this.children('option:selected').text()
+                                var district = $('select[name="calc_shipping_district"]').html()
+                                localStorage.setItem('address_1_saved', address_1)
+                                localStorage.setItem('district', district)
+                                $('select[name="calc_shipping_district"]').on('change', function() {
+                                var target = $(this).children('option:selected')
+                                target.attr('selected', '')
+                                $('select[name="calc_shipping_district"] option').not(target).removeAttr('selected')
+                                var address_2 = target.text()
+                                $('input.billing_address_2').attr('value', address_2)
+                                district = $('select[name="calc_shipping_district"]').html()
+                                localStorage.setItem('district', district)
+                                localStorage.setItem('address_2_saved', address_2)
+                                })
+                            } else {
+                                $('select[name="calc_shipping_district"]').html('<option value="">Quận / Huyện</option>')
+                                district = $('select[name="calc_shipping_district"]').html()
+                                localStorage.setItem('district', district)
+                                localStorage.removeItem('address_1_saved', address_1)
+                            }
+                            })
+                        })
+                        })
+                        //]]></>
+                        
                         
                         
                     </script>

@@ -18091,4 +18091,22 @@
 		margin:auto;
 	}
 	
+
+	.select2-container {
+		display:block;
+		width: 100%!important;
+		
+	}
+
+	.select2-container--default .select2-selection--single, .select2-container--default .select2-selection--single .select2-selection__rendered {
+		min-height:38px;
+		line-height:34px;
+	}
+	.select2-container--default .select2-selection--single .select2-selection__arrow {
+		height:36px!important;
+	}
+
+	.select2-container--default .select2-results__option--highlighted[aria-selected] {
+		background-color: #955c2a;
+	}
 </style>
