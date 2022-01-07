@@ -5,7 +5,7 @@
 <div class="as" id="bookRoom" style="position: relative;">
     <div class="container">
         <div class="d-flex mt-5">
-            <button type="button" class="btn w-100" data-toggle="modal" data-target="#exampleModal"><img src="/images/png/4f642cde3d0fa1d.jpg" alt="" class="mr-auto" style="max-width:80%;"></button>
+            <button type="button" class="btn w-100" data-toggle="modal" data-target="#exampleModal"><img src="images/e47f8655f208ed8.jpg" alt="" class="mr-auto" style="max-width:80%;"></button>
         </div>
         <div class="mt-5">
             <div class="slide-date">
@@ -60,19 +60,19 @@
                     <div class="information-service">
                         <div class="information-service-item">
                             <img src="images/ic_people_detail_booking.svg" alt="">
-                            <span class="">200 người</span>
+                            <span class="">33 người</span>
                         </div>
                         <div class="information-service-item">
                             <img src="images/ic_dientich_detail_booking.svg" alt="">
-                            <span class="">4000 m²</span>
+                            <span class="">50 m²</span>
                         </div>
                         <div class="information-service-item">
                             <img src="images/ic_money_detail_booking.svg" alt="">
-                            <span class=" ">1,500,000 VND/giờ</span>
+                            <span class=" ">500,000 VND/giờ</span>
                         </div>
                         <div class="information-service-item">
                             <img src="images/ic_map_detail_booking.svg" alt="">
-                            <span class="">số 317</span>
+                            <span class=""> Bình Chánh, HCM</span>
                         </div>
                     </div>
                 </div>
@@ -129,6 +129,24 @@
                                     <img src="images/icons8-door_sensor_checked.png" alt="" class="checked d-none img-checked-2">
                                     <img src="images/b411cb0fc64cc7f.png" alt="">
                                     <p class="">Trà nước</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-2 col-md-6">
+                                <div class="item mt-3">
+                                    <input type="checkbox" data-id="3">
+                                    <img src="images/ic_choose_inactive.svg" alt="" class="not-checked">
+                                    <img src="images/icons8-door_sensor_checked.png" alt="" class="checked d-none img-checked-3">
+                                    <img src="images/fc562ded1767fcf.jpg" alt="">
+                                    <p class="">Lễ tân</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-2 col-md-6">
+                                <div class="item mt-3">
+                                    <input type="checkbox" data-id="4">
+                                    <img src="images/ic_choose_inactive.svg" alt="" class="not-checked">
+                                    <img src="images/icons8-door_sensor_checked.png" alt="" class="checked d-none img-checked-4">
+                                    <img src="images/2f5b8561112f156.jpg" alt="">
+                                    <p class="">Bánh ngọt</p>
                                 </div>
                             </div>
                         </div>
@@ -381,7 +399,7 @@
             <div class="row">
                 <div class="col-lg-3 text-center people">
                     <img src="images/ic_people_scroll_detail_booking.svg" alt="">
-                    <h4 class="">200 người</h4>
+                    <h4 class="">33 người</h4>
                 </div>
                 <div class="col-lg-3 text-center price" >
                     <img src="images/ic_money_scroll_detail_booking.svg" alt="">
@@ -389,7 +407,7 @@
                 </div>
                 <div class="col-lg-3 text-center location" >
                     <img src="images/ic_map_scroll_detail_booking.svg" alt="">
-                    <h4 class="">số 317</h4>
+                    <h4 class="">Bình Chánh, HCM</h4>
                 </div>
                 <div class="col-lg-3 text-center col-12 d-flex">
                     <a class="btn btn-book">ĐẶT PHÒNG</a>
@@ -408,7 +426,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <img src="/images/png/4f642cde3d0fa1d.jpg" alt="" class="mr-auto" style="max-width:80%;">
+                <img src="images/e47f8655f208ed8.jpg" alt="" class="mr-auto" style="max-width:80%;">
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -576,6 +594,8 @@
         var coffee = 0;
         var tea = 0;
         var hours = 0;
+        var receptionist = 0;
+        var cake = 0;
         $('.total-price').html('0 VND');
         $("input[data-id='1']").change(function(){
             if(this.checked){
@@ -583,7 +603,7 @@
             }else{
                 coffee = 0; 
             }
-            var totalPrice = (hours * 1500000 + coffee*10000 + tea*15000).toString() + ' VND';
+            var totalPrice = (hours * 500000 + coffee*10000 + tea*15000 + receptionist*100000 + cake*20000).toString() + ' VND';
             $('.total-price').html(totalPrice);
         })
         $("input[data-id='2']").change(function(){
@@ -592,7 +612,25 @@
             }else{
                 tea = 0; 
             }
-            var totalPrice = (hours * 1500000 + coffee*10000 + tea*15000).toString() + ' VND';
+            var totalPrice = (hours * 500000 + coffee*10000 + tea*15000 + receptionist*100000 + cake*20000).toString() + ' VND';
+            $('.total-price').html(totalPrice);
+        })
+        $("input[data-id='3']").change(function(){
+            if(this.checked){
+                receptionist = 1;
+            }else{
+                receptionist = 0; 
+            }
+            var totalPrice = (hours * 500000 + coffee*10000 + tea*15000 + receptionist*100000 + cake*20000).toString() + ' VND';
+            $('.total-price').html(totalPrice);
+        })
+        $("input[data-id='4']").change(function(){
+            if(this.checked){
+                cake = 1;
+            }else{
+                cake = 0; 
+            }
+            var totalPrice = (hours * 500000 + coffee*10000 + tea*15000 + receptionist*100000 + cake*20000).toString() + ' VND';
             $('.total-price').html(totalPrice);
         })
 
@@ -603,7 +641,7 @@
                 } else {
                     hours = hours + 1;
                 } 
-                var totalPrice = (hours * 1500000 + coffee*10000 + tea*15000).toString() + ' VND';
+                var totalPrice = (hours * 500000 + coffee*10000 + tea*15000 + receptionist*100000 + cake*20000).toString() + ' VND';
                 $('.total-price').html(totalPrice);
                 console.log(totalPrice);
                 console.log(coffee);

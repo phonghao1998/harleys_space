@@ -575,12 +575,12 @@
                         <div class="owl-stage-outer">
                             <div class="owl-stage">
                                 <div class="item owl-item" >
-                                    <a href="" class="">
+                                    <a href="/bookroom-more" class="">
                                         <div class="price-2 bg">
                                             500,000 VND/giờ
                                         </div>
                                         <div class="main-img-2" style="position: relative;">
-                                            <img src="images/png/4f642cde3d0fa1d.jpg" alt="">
+                                            <img src="images/e47f8655f208ed8.jpg" alt="">
                                         </div>
                                         <div class="row">
                                             <div class="col-12 dflex">
@@ -603,12 +603,12 @@
                                     </a>
                                 </div>
                                 <div class="item owl-item" >
-                                    <a href="" class="">
+                                    <a href="/bookroom-more" class="">
                                         <div class="price-2 bg">
                                             500,000 VND/giờ
                                         </div>
                                         <div class="main-img-2" style="position: relative;">
-                                            <img src="images/png/4f642cde3d0fa1d.jpg" alt="">
+                                            <img src="images/e47f8655f208ed8.jpg" alt="">
                                         </div>
                                         <div class="row">
                                             <div class="col-12 dflex">
@@ -631,12 +631,12 @@
                                     </a>
                                 </div>
                                 <div class="item owl-item" >
-                                    <a href="" class="">
+                                    <a href="/bookroom-more" class="">
                                         <div class="price-2 bg">
                                             500,000 VND/giờ
                                         </div>
                                         <div class="main-img-2" style="position: relative;">
-                                            <img src="images/png/4f642cde3d0fa1d.jpg" alt="">
+                                            <img src="images/e47f8655f208ed8.jpg" alt="">
                                         </div>
                                         <div class="row">
                                             <div class="col-12 dflex">
@@ -659,12 +659,12 @@
                                     </a>
                                 </div>
                                 <div class="item owl-item" >
-                                    <a href="" class="">
+                                    <a href="/bookroom-more" class="">
                                         <div class="price-2 bg">
                                             500,000 VND/giờ
                                         </div>
                                         <div class="main-img-2" style="position: relative;">
-                                            <img src="images/png/4f642cde3d0fa1d.jpg" alt="">
+                                            <img src="images/e47f8655f208ed8.jpg" alt="">
                                         </div>
                                         <div class="row">
                                             <div class="col-12 dflex">

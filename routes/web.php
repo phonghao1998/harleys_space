@@ -31,3 +31,6 @@ Route::get('/history', function () {
 Route::get('/bookroom', function () {
     return view('bookroom');
 });
+Route::get('/bookroom-more', function () {
+    return view('bookroom-more');
+});
