@@ -8,7 +8,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
-                <a class="card sale-card">
+                <a class="card sale-card" href="/bookroom">
                     <img src="/images/png/4f642cde3d0fa1d.jpg" alt="">
                     <div class="card-content">
                         <h3 class="card-title">
@@ -34,7 +34,7 @@
                 </a>
             </div>
             <div class="col-lg-6">
-                <a class="card sale-card">
+                <a class="card sale-card" href="/bookroom">
                     <img src="/images/png/4f642cde3d0fa1d.jpg" alt="">
                     <div class="card-content">
                         <h3 class="card-title">
@@ -60,7 +60,7 @@
                 </a>
             </div>
             <div class="col-lg-6">
-                <a class="card sale-card">
+                <a class="card sale-card" href="/bookroom">
                     <img src="/images/png/4f642cde3d0fa1d.jpg" alt="">
                     <div class="card-content">
                         <h3 class="card-title">
@@ -86,7 +86,7 @@
                 </a>
             </div>
             <div class="col-lg-6">
-                <a class="card sale-card">
+                <a class="card sale-card" href="/bookroom">
                     <img src="/images/png/4f642cde3d0fa1d.jpg" alt="">
                     <div class="card-content">
                         <h3 class="card-title">
@@ -112,7 +112,7 @@
                 </a>
             </div>
             <div class="col-lg-6">
-                <a class="card sale-card">
+                <a class="card sale-card" href="/bookroom">
                     <img src="/images/png/4f642cde3d0fa1d.jpg" alt="">
                     <div class="card-content">
                         <h3 class="card-title">
@@ -138,7 +138,7 @@
                 </a>
             </div>
             <div class="col-lg-6">
-                <a class="card sale-card">
+                <a class="card sale-card" href="/bookroom">
                     <img src="/images/png/4f642cde3d0fa1d.jpg" alt="">
                     <div class="card-content">
                         <h3 class="card-title">

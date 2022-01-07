@@ -583,7 +583,7 @@
             }else{
                 coffee = 0; 
             }
-            var totalPrice = (hours * 1500000 + coffee*10000 + tea*15000).toString() + ' VND';
+            var totalPrice = (addCommas(hours * 1500000 + coffee*10000 + tea*15000)).toString() + ' VND';
             $('.total-price').html(totalPrice);
         })
         $("input[data-id='2']").change(function(){
@@ -592,7 +592,7 @@
             }else{
                 tea = 0; 
             }
-            var totalPrice = (hours * 1500000 + coffee*10000 + tea*15000).toString() + ' VND';
+            var totalPrice = (addCommas(hours * 1500000 + coffee*10000 + tea*15000)).toString() + ' VND';
             $('.total-price').html(totalPrice);
         })
 
@@ -603,24 +603,26 @@
                 } else {
                     hours = hours + 1;
                 } 
-                var totalPrice = (hours * 1500000 + coffee*10000 + tea*15000).toString() + ' VND';
+                var totalPrice = (addCommas(hours * 1500000 + coffee*10000 + tea*15000)).toString() + ' VND';
                 $('.total-price').html(totalPrice);
                 console.log(totalPrice);
                 console.log(coffee);
             })    
         })
         
-        // createPopper($('#header'), $('.check-out'), {
-        //     placement: 'top',
-        //     modifiers: [
-        //         {
-        //         name: 'offset',
-        //         options: {
-        //             offset: [0, 8],
-        //         },
-        //         },
-        //     ],
-        // });
+        function addCommas(nStr)
+        {
+            nStr += '';
+            x = nStr.split('.');
+            x1 = x[0];
+            x2 = x.length > 1 ? '.' + x[1] : '';
+            var rgx = /(\d+)(\d{3})/;
+            while (rgx.test(x1)) {
+                x1 = x1.replace(rgx, '$1' + ',' + '$2');
+            }
+            return x1 + x2;
+        }
+    
     </script>
 </div>
 @endsection
