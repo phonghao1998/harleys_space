@@ -18066,7 +18066,7 @@
 		background-image:url(images/bg_scroll_detail_booking.svg);
 		padding:20px 0;
 		color:#fff;
-		position:fixed;
+		position:sticky;
 		bottom:0;
 		left: 0;
 		right: 0;
