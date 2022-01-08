@@ -34,3 +34,7 @@ Route::get('/bookroom', function () {
 Route::get('/bookroom-more', function () {
     return view('bookroom-more');
 });
+Route::get('/result', function () {
+    return view('result');
+});
+

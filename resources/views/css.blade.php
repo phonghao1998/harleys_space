@@ -17903,15 +17903,15 @@
 
 	/* new */
 
-	#new {
+	#new, #result {
 		padding-top: 80px;
 	}
 
-	#new .banner {
+	#new .banner,  {
 		background-image:url(images/img_news.jpg);
 	}
 
-	#new .banner h3 {
+	#new .banner h3, #result .banner h3 {
 		color: #fff;
 		font-size: 70px;
 		line-height: 300px;
@@ -18107,5 +18107,25 @@
 
 	.select2-container--default .select2-results__option--highlighted[aria-selected] {
 		background-color: #955c2a;
+	}
+
+	/* result */
+	#result .banner {
+		background-image: url(/images/img_search_result.jpg);
+	}
+
+	#result .box1-right {
+		box-shadow: 0 2.8px 2.2px rgb(0 0 0 / 3%), 0 6.7px 5.3px rgb(0 0 0 / 4%), 0 12.5px 10px rgb(0 0 0 / 5%);
+		border :1px solid #eaeaea;
+		position:sticky;
+		top: 100px;
+	}
+
+	#result .result-item img {
+		width:100%;
+	}
+
+	#result .result-item .price-2 {
+		left:0;
 	}
 </style>

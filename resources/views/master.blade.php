@@ -880,7 +880,7 @@
                     </script>
                 </div>
                 <div class="col-12 d-flex">
-                    <a href="" class="btn btn-see-all mr-auto">Xem tất cả</a>
+                    <a href="/result" class="btn btn-see-all mr-auto">Xem tất cả</a>
                 </div>
             </div>
         </div>
