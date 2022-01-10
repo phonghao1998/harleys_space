@@ -17907,7 +17907,7 @@
 		padding-top: 80px;
 	}
 
-	#new .banner,  {
+	#new .banner {
 		background-image:url(images/img_news.jpg);
 	}
 
