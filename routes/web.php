@@ -37,4 +37,7 @@ Route::get('/bookroom-more', function () {
 Route::get('/result', function () {
     return view('result');
 });
+Route::get('/check-out', function () {
+    return view('check-out');
+});
 

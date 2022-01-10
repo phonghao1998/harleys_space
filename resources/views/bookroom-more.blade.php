@@ -410,7 +410,7 @@
                     <h4 class="">Bình Chánh, HCM</h4>
                 </div>
                 <div class="col-lg-3 text-center col-12 d-flex">
-                    <a class="btn btn-book">ĐẶT PHÒNG</a>
+                    <a class="btn btn-book"  href="/check-out">ĐẶT PHÒNG</a>
                 </div>
             </div>
         </div>

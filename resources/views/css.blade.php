@@ -17911,7 +17911,7 @@
 		background-image:url(images/img_news.jpg);
 	}
 
-	#new .banner h3, #result .banner h3 {
+	#new .banner h3, #result .banner h3, #checkOut .banner h3 {
 		color: #fff;
 		font-size: 70px;
 		line-height: 300px;
@@ -18128,4 +18128,82 @@
 	#result .result-item .price-2 {
 		left:0;
 	}
+
+	#checkOut {
+		padding-top: 80px;
+	}
+
+	#checkOut .banner {
+		background-image:url(images/img_booking_info.jpg);
+		height:300px;
+	}
+
+	#checkOut .title {
+		font-family: initial;
+	}
+
+	#checkOut .form-info, #checkOut .info-room {
+		padding:50px 20px;
+		border-radius:10px;
+		background:#eaeaea;
+	}
+
+	#checkOut .form-info .checkbox-rule {
+		width:24px;
+		height:24px;
+	}
+
+	#checkOut .form-info .text-warn {
+		color:#dc3545;
+	}
+
+	#checkOut .form-info .rule-content {
+		margin-left: 10px;
+	}
+	#checkOut .form-info .rule-content span {
+		color: #750d1c;
+		text-decoration:underline;
+	}
+
+	#checkOut .form-info .label-form-info span {
+		color: #750d1c;
+		margin-left: 4px;
+	}
+
+	#checkOut .btn-checkout {
+		color:#fff;
+		background-color:#955c2a;
+	}
+
+	#checkOut .info-room .name-room, #checkOut .info-room .service {
+		font-size:20px;
+		font-weight:500;
+	}
+
+	#checkOut .info-room .info-detail {
+		color:#909090;
+		margin-bottom: 10px;
+	}
+
+	#checkOut .info-room .info-detail span {
+		margin-left: 6px;
+	}
+
+	#checkOut .info-room .info-service img{
+		width: 20px;
+		margin: 0 5px;
+		margin-bottom: 7px;
+	}
+
+	#checkOut .info-room .info-service input{
+		width: 16px;
+		height:16px;
+	}
+
+	#checkOut .info-room .info-service span.price {
+		float: right;
+		color:#909090;
+	}
+
+
 </style>
