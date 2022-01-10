@@ -14,7 +14,7 @@
                      THÔNG TIN KHÁCH HÀNG
                     </h3>
                     <div class="row">
-                        <div class="col-6 mt-3" >
+                        <div class="col-md-6 col-12 mt-3" >
                             <label class="label-form-info">Sự kiện</label>
                             <select id="select-event" placeholder="Pick a event" >
                                 <option>Sự kiện</option>     
@@ -22,17 +22,17 @@
                                 <option>Hội họp</option>     
                             </select>
                         </div>
-                        <div class="col-6 mt-3" >
+                        <div class="col-md-6 col-12 mt-3" >
                             <label class="label-form-info">Họ và tên<span>*</span></label>
                             <input type="text" class="form-control form-control-name" placeholder="Nguyễn Văn A">
                             <p class="text-warn-name text-warn"></p>
                         </div>
-                        <div class="col-6 mt-3" >
+                        <div class="col-md-6 col-12 mt-3" >
                             <label class="label-form-info">Email<span>*</span></label>
                             <input type="email" class="form-control form-control-email" placeholder="abc@gmail.com">
                             <p class="text-warn-email text-warn"></p>
                         </div>
-                        <div class="col-6 mt-3" >
+                        <div class="col-md-6 col-12 mt-3" >
                             <label class="label-form-info">Số điện thoại<span>*</span></label>
                             <input type="tel" class="form-control form-control-phone" placeholder="09xx.xxx.xxx" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" id="phone" name="phone">
                             <p class="text-warn-phone text-warn"></p>

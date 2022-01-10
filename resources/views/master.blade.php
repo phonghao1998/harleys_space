@@ -199,6 +199,8 @@
                         $("#select-date").select2({
                                 placeholder: "Select a date",
                                 dropdownPosition: 'below',
+                                width:'100%',
+                                
                             });
                         $("#select-time-start").select2({
                             placeholder: "Select a time start",
@@ -305,18 +307,20 @@
                         })
                         
                         $('.btn-search').on('click', function(){
-                            let timeStart = Number($('.time-start .item').attr('data-value'));
-                            let timeEnd = Number($('.time-end .item').attr('data-value'));
-                            let provide = $('.provide .item').attr('data-value');
-                            let district = $('.district .item').attr('data-value');
+                            let timeStart = Number(($('#select2-select-time-start-container').attr('title')).split('')[0] + ($('#select2-select-time-start-container').attr('title')).split('')[1]);
+                            let timeEnd = Number(($('#select2-select-time-end-container').attr('title')).split('')[0] + ($('#select2-select-time-end-container').attr('title')).split('')[1]);
+                            let provide = $('#select2-select-provide-container').attr('title');
+                            let district = $('#select2-select-district-container').attr('title');
                             if (timeStart >= timeEnd) {
                                 alert('thời gian ko phù hợp')
-                            } else  if (provide == 'Tỉnh/Thành phố') {
+                            } else  if (provide == undefined) {
                                 alert('Chọn Tỉnh/Thành phố');
-                            } else if (district == 'Quận/Huyện') {
+                            } else if (district == undefined) {
                                 alert('Chọn Quận/Huyện');
                             }
                         })
+
+                        $('#select2-select-time-start-container').attr('title')
                         
                         //<![CDATA[
                         if (address_2 = localStorage.getItem('address_2_saved')) {
