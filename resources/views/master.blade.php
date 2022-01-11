@@ -197,26 +197,28 @@
                         })(window.jQuery);
 
                         $("#select-date").select2({
-                                placeholder: "Select a date",
-                                dropdownPosition: 'below',
-                                width:'100%',
-                                
-                            });
+                            placeholder: "Select a date",
+                            dropdownPosition: 'below',
+                        });
                         $("#select-time-start").select2({
                             placeholder: "Select a time start",
                             dropdownPosition: 'below',
+                            
                         });
                         $("#select-time-end").select2({
                             placeholder: "Select a end",
                             dropdownPosition: 'below',
+                            
                         });
                         $("#select-provide").select2({
                             placeholder: "Select a provide",
                             dropdownPosition: 'below',
+                            
                         })
                         $("#select-district").select2({
                             placeholder: "Select a district",
-                            dropdownPosition: 'below',                   
+                            dropdownPosition: 'below',
+                                               
                         });
 
                         var curr = new Date;

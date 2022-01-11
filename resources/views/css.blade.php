@@ -18205,5 +18205,9 @@
 		color:#909090;
 	}
 
+	.select2-container.select2-container--default.select2-container--open {
+		width: unset!important;;
+	}
+
 
 </style>
