@@ -40,4 +40,7 @@ Route::get('/result', function () {
 Route::get('/check-out', function () {
     return view('check-out');
 });
+Route::get('/confirm', function () {
+    return view('confirm');
+});
 

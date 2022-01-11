@@ -64,6 +64,17 @@
         .check-out .people, .check-out .price, .check-out .location {
             display: none;
         }
+
+        #confirm .info-confirm .info-detail  {
+		    border-right:none;
+            padding: 20px;
+	    }
+
+        #confirm .detail-img img {
+            border-top-left-radius:10px;
+            border-top-right-radius:10px;
+            border-bottom-left-radius:0;
+        }
     }
 
 	@media(max-width:575px) {

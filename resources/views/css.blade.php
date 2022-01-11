@@ -17760,7 +17760,7 @@
 		height:300px;
 	}
 
-	#service .banner h3 {
+	#service .banner h3, #confirm .banner h3 {
 		color: #fff;
 		font-size: 70px;
 		line-height: 300px;
@@ -18207,6 +18207,52 @@
 
 	.select2-container.select2-container--default.select2-container--open {
 		width: unset!important;;
+	}
+
+	#confirm {
+		padding-top: 80px;
+	}
+
+	#confirm .banner {
+		background-image: url(images/img_search_result.jpg);
+		height:300px;
+	}
+
+	#confirm .detail-img img {
+		max-width:100%;
+		border-top-left-radius:10px;
+		border-bottom-left-radius:10px;
+	}
+
+	#confirm .info-confirm {
+		border-radius:10px;
+		border:1px solid #a3a9af;
+	}
+
+	#confirm .title {
+		font-family: initial;
+	}
+
+	#confirm .info-confirm .name-room {
+		font-size:30px;
+		font-weight:bold;
+		font-family: initial;
+		letter-spacing:2px;
+	}
+
+	#confirm .info-confirm .info-detail label {
+		font-size:22px;
+		color:#909090;
+	}
+
+	#confirm .info-confirm .info-detail  {
+		border-right:4px solid #a3a9af;
+		border-right-style:dotted;
+	}
+
+	#confirm .info-confirm .condition-confirm h4 {
+		color:#955c2a;
+		margin-top: 20px;
 	}
 
 

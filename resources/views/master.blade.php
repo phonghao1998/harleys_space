@@ -319,6 +319,8 @@
                                 alert('Chọn Tỉnh/Thành phố');
                             } else if (district == undefined) {
                                 alert('Chọn Quận/Huyện');
+                            } else {
+                                $(location).attr('href','/result')
                             }
                         })
 

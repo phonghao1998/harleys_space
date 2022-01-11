@@ -58,26 +58,28 @@
                             placeholder: "Select a event",
                             
                     });
+                  
+
                     $('.btn-checkout').on('click', function() {
                         if(!$('.checkbox-rule').is(":checked")) {
                             alert("Bạn chưa đồng ý với điều khoản sử dụng của chúng tôi");
-                        }else {}
-                        if(!$('.form-control-email').val()) {
-                            $('.text-warn-email').text('Email không được trống!')
-                        } else {
-                            $('.text-warn-email').text('')
+                        } else if(!$('.form-control-name').val()) {
+                            $('.text-warn-name').text('Họ tên không được trống!');
+                        }else{
+                            $('.text-warn-name').text('');
+                            if(!$('.form-control-email').val()) {
+                                $('.text-warn-email').text('Email không được trống!');
+                            }else {
+                                $('.text-warn-email').text('');
+                                if(!$('.form-control-phone').val()) {
+                                    $('.text-warn-phone').text('Số điện thọai không được trống!');
+                                }else {
+                                    $('.text-warn-phone').text('');
+                                    $(location).attr('href','/confirm');
+                                }
+                            }
                         }
-                        if(!$('.form-control-phone').val()) {
-                            $('.text-warn-phone').text('Số điện thọai không được trống!')
-                        } else {
-                            $('.text-warn-phone').text('')
-                        }
-                        if(!$('.form-control-name').val()) {
-                            $('.text-warn-name').text('Họ tên không được trống!')
-                        }else {
-                            $('.text-warn-name').text('')
-                        }
-                    })
+                    });
 
                 </script>
             </div>
