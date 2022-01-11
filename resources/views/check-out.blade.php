@@ -55,11 +55,9 @@
 
                 <script type="text/javascript">
                     $("#select-event").select2({
-                            placeholder: "Select a event",
-                            
+                        placeholder: "Select a event", 
                     });
                   
-
                     $('.btn-checkout').on('click', function() {
                         if(!$('.checkbox-rule').is(":checked")) {
                             alert("Bạn chưa đồng ý với điều khoản sử dụng của chúng tôi");
@@ -80,6 +78,12 @@
                             }
                         }
                     });
+
+                    var Price = localStorage.getItem("finalPrice");
+                    $('#checkOut').on('click', function() {
+                        $('.total-price').html(Price)
+                    })
+                    console.log($('.total-price').html());
 
                 </script>
             </div>
@@ -118,7 +122,7 @@
                     </div>
                     <h4 class="total mt-4">TỔNG CỘNG</h4>
                     <h2 class="total-price mt-3">
-
+                        
                     </h2>
                 </div>
             </div>

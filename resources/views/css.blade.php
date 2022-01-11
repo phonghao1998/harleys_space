@@ -18196,13 +18196,21 @@
 	}
 
 	#checkOut .info-room .info-service input{
-		width: 16px;
-		height:16px;
+		width: 100%;
+		height:100%;
+		opacity: 0;
 	}
 
 	#checkOut .info-room .info-service span.price {
 		float: right;
 		color:#909090;
+	}
+
+	#checkOut .info-room .total-price {
+		font-size: 35px;
+		font-family:initial;
+		color:#955c2a;
+		text-align: center;
 	}
 
 	.select2-container.select2-container--default.select2-container--open {
