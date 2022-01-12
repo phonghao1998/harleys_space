@@ -1028,9 +1028,20 @@
                 <img src="images/logo_airbnb.svg" alt="">
                 <img src="images/logo_vnpt.svg" alt="">
             </div>
-            
         </div>
     </div>
+    <style>
+        #header .nav-header:first-child {
+            background-image: url(images/bg_active_menu_110px.svg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+           
+        }
+        #header .nav-header:first-child a {
+            color: #750d1c;
+        }
+    </style>
     
 @endsection
 

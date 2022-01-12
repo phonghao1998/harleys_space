@@ -31,13 +31,10 @@
                         <br>
                         <label for="" class="">
                             <img src="images/ic_money.svg" alt="">
-                            <span>1,500,000 VND</span>
+                            <span class="total-price"></span>
                         </label>
                         <br>
-                        <label for="" class="">
-                            <img src="images/ic_money.svg" alt="">
-                            <span>06:00 - 07:00 </span>
-                            <span>14/01/2022</span>
+                        <label for="" class="time-info">
                         </label>
                     </div>
                 </div>
@@ -53,4 +50,44 @@
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    var Price = localStorage.getItem("finalPrice");
+    var Day = localStorage.getItem("dataDay");
+    var Time = localStorage.getItem("dataTime").split(",");
+    var l = Time.length;
+    console.log(html);
+    var html = '';
+    for(var i = 0; i < l ; i++) {
+        html += '<img src="images/ic_time_infor_booking_detail.svg">' + '<span>' +Time[i]+ '</span>' + '<span>' +Day+ '</span>' + '</br>'
+    }
+    $('#confirm').on('click', function() {
+        $('.total-price').html(addCommas(Price) + ' VND');
+        $('.time-info').html(html);
+    })
+
+    function addCommas(nStr)
+    {
+        nStr += '';
+        x = nStr.split('.');
+        x1 = x[0];
+        x2 = x.length > 1 ? '.' + x[1] : '';
+        var rgx = /(\d+)(\d{3})/;
+        while (rgx.test(x1)) {
+            x1 = x1.replace(rgx, '$1' + ',' + '$2');
+        }
+        return x1 + x2;
+    }
+</script>
+<style>
+        #header .nav-header:first-child {
+            background-image: url(images/bg_active_menu_110px.svg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+           
+        }
+        #header .nav-header:first-child a {
+            color: #750d1c;
+        }
+    </style>
 @endsection

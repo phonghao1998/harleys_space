@@ -172,7 +172,16 @@
 </div>
 
 <style>
-    
+     #header .nav-header:nth-child(2) {
+        background-image: url(images/bg_active_menu_110px.svg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+    }
+    #header .nav-header:nth-child(2) a {
+        color: #750d1c;
+    }
 </style>
 <script type="text/javascript">
     var $grid = $('.grid').masonry({

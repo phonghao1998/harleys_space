@@ -63,14 +63,17 @@
                             alert("Bạn chưa đồng ý với điều khoản sử dụng của chúng tôi");
                         } else if(!$('.form-control-name').val()) {
                             $('.text-warn-name').text('Họ tên không được trống!');
+                            alert("Họ tên không được trống!");
                         }else{
                             $('.text-warn-name').text('');
                             if(!$('.form-control-email').val()) {
                                 $('.text-warn-email').text('Email không được trống!');
+                                alert("Email không được trống!");
                             }else {
                                 $('.text-warn-email').text('');
                                 if(!$('.form-control-phone').val()) {
                                     $('.text-warn-phone').text('Số điện thọai không được trống!');
+                                    alert("Số điện thọai không được trống!');");
                                 }else {
                                     $('.text-warn-phone').text('');
                                     $(location).attr('href','/confirm');
@@ -80,11 +83,34 @@
                     });
 
                     var Price = localStorage.getItem("finalPrice");
+                    var Day = localStorage.getItem("dataDay");
+                    var Time = localStorage.getItem("dataTime").split(",");
                     $('#checkOut').on('click', function() {
-                        $('.total-price').html(Price)
+                        $('.total-price').html(addCommas(Price) + ' VND');
+                        $('.info-detail .day').html(Day);
+                        $('.info-detail.time').html(html);
                     })
-                    console.log($('.total-price').html());
+                    
+                    var l = Time.length;
+                    console.log(html);
+                    var html = '';
+                    for(var i = 0; i < l ; i++) {
+                        html += '<img src="images/ic_time_infor_booking_detail.svg">' + '<span>' +Time[i]+ '</span>' + '</br>'
+                    }
 
+                    function addCommas(nStr)
+                    {
+                        nStr += '';
+                        x = nStr.split('.');
+                        x1 = x[0];
+                        x2 = x.length > 1 ? '.' + x[1] : '';
+                        var rgx = /(\d+)(\d{3})/;
+                        while (rgx.test(x1)) {
+                            x1 = x1.replace(rgx, '$1' + ',' + '$2');
+                        }
+                        return x1 + x2;
+                    }
+                    
                 </script>
             </div>
             <div class="col-lg-4">
@@ -95,13 +121,12 @@
                         <img src="images/ic_people.svg" alt="">
                         <span>200 người</span>
                     </div>
-                    <div class="info-detail">
-                        <img src="images/ic_time_infor_booking_detail.svg" alt="">
-                        <span>06:00-07:00</span>
+                    <div class="info-detail time">
+                        
                     </div>
                     <div class="info-detail">
                         <img src="images/ic_calendar_infor_booking_detail.svg" alt="">
-                        <span>14/01/2022</span>
+                        <span class="day"></span>
                     </div>
                     <div class="info-detail">
                         <img src="images/ic_map_discount_room.svg" alt="">
@@ -110,14 +135,18 @@
                     <p class="service">Dịch vụ</p>
                     <div class="info-service">
                         <input type="checkbox" class="">
-                        <img src="images/b411cb0fc64cc7f.png" alt="">
-                        <span>Coffe</span>
+                        <span class="yon">
+                            <img src="images/b411cb0fc64cc7f.png" alt="">
+                            <span>Coffe</span>
+                        </span>
                         <span class="price">10,000</span>
                     </div>
                     <div class="info-service">
                         <input type="checkbox" class="">
-                        <img src="images/3fcdf5093500b7e.png" alt="">
-                        <span>Trà nước</span>
+                        <span class="yon">
+                            <img src="images/3fcdf5093500b7e.png" alt="">
+                            <span>Trà nước</span>
+                        </span>
                         <span class="price">15,000</span>
                     </div>
                     <h4 class="total mt-4">TỔNG CỘNG</h4>
@@ -129,4 +158,16 @@
         </div>
     </div>
 </div>
+<style>
+        #header .nav-header:first-child {
+            background-image: url(images/bg_active_menu_110px.svg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+           
+        }
+        #header .nav-header:first-child a {
+            color: #750d1c;
+        }
+    </style>
 @endsection

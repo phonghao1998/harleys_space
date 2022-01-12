@@ -18199,6 +18199,15 @@
 		width: 100%;
 		height:100%;
 		opacity: 0;
+		position:absolute;
+		top:0;
+		left:0;
+		z-index: 999;
+	}
+
+	#checkOut .info-room .info-service {
+		position: relative;
+		margin-top: 10px;
 	}
 
 	#checkOut .info-room .info-service span.price {
@@ -18206,6 +18215,47 @@
 		color:#909090;
 	}
 
+	#checkOut .info-room .info-service .yon:before {
+		content:'';
+		width:18px;
+		height:18px;
+		position: absolute;
+		left: -16px;
+		top: 4px;
+		background:#955c2a;
+		border-radius:50%;
+		border:2px solid #955c2a;
+		outline:3px solid #fff;
+		outline-offset:-5px;
+		opacity: 0;
+	}
+
+	#checkOut .info-room .info-service .yon:after {
+		content:'';
+		width:18px;
+		height:18px;
+		position: absolute;
+		left: -16px;
+		top: 4px;
+		background:#fff;
+		border-radius:50%;
+		border:2px solid #955c2a;
+
+	}
+
+	#checkOut .info-room .info-service .yon {
+		position: relative;
+		margin-left: 14px;
+	}
+
+	#checkOut .info-room .info-service input[type=checkbox]:checked +.yon:before {
+		opacity: 1;
+	}
+
+	#checkOut .info-room .info-service input[type=checkbox]:checked +.yon:after {
+		opacity: 0;
+	}
+ 
 	#checkOut .info-room .total-price {
 		font-size: 35px;
 		font-family:initial;
@@ -18253,6 +18303,10 @@
 		color:#909090;
 	}
 
+	#confirm .info-confirm .info-detail {
+		padding:20px;
+	}
+
 	#confirm .info-confirm .info-detail  {
 		border-right:4px solid #a3a9af;
 		border-right-style:dotted;
@@ -18261,6 +18315,10 @@
 	#confirm .info-confirm .condition-confirm h4 {
 		color:#955c2a;
 		margin-top: 20px;
+	}
+
+	#confirm .info-confirm .time-info span {
+		margin-left: 6px;
 	}
 
 
