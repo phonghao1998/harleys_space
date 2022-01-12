@@ -596,11 +596,11 @@
             }else{
                 coffee = 0; 
             }
-            var totalPriceN = hours * 1500000 + coffee*10000 + tea*15000;
-            localStorage.setItem("finalPrice", totalPriceN);
             var totalPrice = (addCommas(hours * 1500000 + coffee*10000 + tea*15000)).toString() + ' VND';
             $('.total-price').html(totalPrice);
+            var totalPriceN = hours * 1500000 + coffee*10000 + tea*15000;
             localStorage.setItem("finalPrice", totalPriceN);
+
         })
         $("input[data-id='2']").change(function(){
             if(this.checked){

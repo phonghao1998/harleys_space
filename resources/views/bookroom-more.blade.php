@@ -410,7 +410,7 @@
                     <h4 class="">Bình Chánh, HCM</h4>
                 </div>
                 <div class="col-lg-3 text-center col-12 d-flex">
-                    <a class="btn btn-book"  href="/check-out">ĐẶT PHÒNG</a>
+                    <button class="btn btn-book" >ĐẶT PHÒNG</button>
                 </div>
             </div>
         </div>
@@ -441,7 +441,7 @@
         var mm = String(curr.getMonth() + 1).padStart(2, '0'); 
         var checkPoint = 0;
         var html = '';
-        var date_v = '14/01/2022'
+        var date_v = '15/01/2022'
         for (var i = -1; i <= 12+1; i++) {
             var next = new Date(curr.getTime());
             next.setDate(first + i);
@@ -451,8 +451,7 @@
             if(temp_d==date_v && !checkPoint){
                 checkPoint+=i+1;
             }
-            html += '<div class="day" val="'+temp_d+'">' + dayweeks[2]+'/'+mm + '</br>' + convertDay(dayweeks[0]) + '</div>'; 
-            console.log(date_v);
+            html += '<div class="day '+(temp_d==date_v?'active':'')+'" val="'+temp_d+'">' + dayweeks[2]+'/'+mm + '</br>' + convertDay(dayweeks[0]) + '</div>';
         }
         function convertDay(item){
             if(item == "Mon"){
@@ -513,11 +512,15 @@
 
             ]
         });
-
+        var pickDay = $('.slide-date .day.active').attr('val');
+        localStorage.setItem("dataDay", pickDay);
         $('.day').each(function() {
             $(this).on('click', function(){
                 $('.day').removeClass('active');
                 $(this).toggleClass('active');
+                var pickDay = $('.slide-date .day.active').attr('val');
+                localStorage.setItem("dataDay", pickDay);
+                console.log(pickDay);
             })
         })
 
@@ -527,13 +530,13 @@
         for (var i = 1; i < 23; i++) {
             var html = '';
             if(i == 7){
-                html += '<div class="hours hours-soon" attr_r="'+i+'">' + ('0' + i).slice(-2) + ":00 - " + ('0' + (i + 1)).slice(-2) + ":00" + '</div>'
+                html += '<div class="hours hours-soon" attr_r="'+i+'" val="'+('0' + i).slice(-2) + ":00 - " + ('0' + (i + 1)).slice(-2) + ":00"+'">' + ('0' + i).slice(-2) + ":00 - " + ('0' + (i + 1)).slice(-2) + ":00" + '</div>'
             }
             else if(i < 22){
-                html += '<div class="hours hours-soon" attr_r="'+i+'">' + ('0' + i).slice(-2) + ":00 - " + ('0' + (i + 1)).slice(-2) + ":00" + '</div>'
+                html += '<div class="hours hours-soon" attr_r="'+i+'" val="'+('0' + i).slice(-2) + ":00 - " + ('0' + (i + 1)).slice(-2) + ":00"+'">' + ('0' + i).slice(-2) + ":00 - " + ('0' + (i + 1)).slice(-2) + ":00" + '</div>'
             }
             else{
-                html += '<div class="hours hours-end" attr_r="'+i+'">' + ('0' + i).slice(-2) + ":00 - " + ('0' + (i + 1)).slice(-2) + ":00" + '</div>'
+                html += '<div class="hours hours-end" attr_r="'+i+'" val="'+('0' + i).slice(-2) + ":00 - " + ('0' + (i + 1)).slice(-2) + ":00"+'">' + ('0' + i).slice(-2) + ":00 - " + ('0' + (i + 1)).slice(-2) + ":00" + '</div>'
             }
             $(".slide-time").append(html);
             
@@ -586,10 +589,20 @@
             })
         })
 
+        var pickTime = []; 
         $('.slide-time .hours').each(function() {
             $(this).on('click', function(){
                 $(this).toggleClass('active');
-            })
+                if($(this).hasClass('active')){
+                    pickTime.push($(this).attr('val'));
+                    console.log(pickTime);
+                    localStorage.setItem("dataTime",pickTime);
+                } else {
+                    pickTime.pop($(this).attr('val'));
+                    console.log(pickTime);
+                    localStorage.setItem("dataTime",pickTime);
+                }
+            });
         })
         var coffee = 0;
         var tea = 0;
@@ -605,6 +618,8 @@
             }
             var totalPrice = (addCommas(hours * 500000 + coffee*10000 + tea*15000 + receptionist*100000 + cake*20000)).toString() + ' VND';
             $('.total-price').html(totalPrice);
+            var totalPriceN = hours * 500000 + coffee*10000 + tea*15000 + receptionist*100000 + cake*20000;
+            localStorage.setItem("finalPrice", totalPriceN);
         })
         $("input[data-id='2']").change(function(){
             if(this.checked){
@@ -614,6 +629,8 @@
             }
             var totalPrice = (addCommas(hours * 500000 + coffee*10000 + tea*15000 + receptionist*100000 + cake*20000)).toString() + ' VND';
             $('.total-price').html(totalPrice);
+            var totalPriceN = hours * 500000 + coffee*10000 + tea*15000 + receptionist*100000 + cake*20000;
+            localStorage.setItem("finalPrice", totalPriceN);
         })
         $("input[data-id='3']").change(function(){
             if(this.checked){
@@ -623,6 +640,8 @@
             }
             var totalPrice = (addCommas(hours * 500000 + coffee*10000 + tea*15000 + receptionist*100000 + cake*20000)).toString() + ' VND';
             $('.total-price').html(totalPrice);
+            var totalPriceN = hours * 500000 + coffee*10000 + tea*15000 + receptionist*100000 + cake*20000;
+            localStorage.setItem("finalPrice", totalPriceN);
         })
         $("input[data-id='4']").change(function(){
             if(this.checked){
@@ -632,6 +651,8 @@
             }
             var totalPrice = (addCommas(hours * 500000 + coffee*10000 + tea*15000 + receptionist*100000 + cake*20000)).toString() + ' VND';
             $('.total-price').html(totalPrice);
+            var totalPriceN = hours * 500000 + coffee*10000 + tea*15000 + receptionist*100000 + cake*20000;
+            localStorage.setItem("finalPrice", totalPriceN);
         })
 
         $('.slide-time .hours').each(function() {
@@ -643,8 +664,8 @@
                 } 
                 var totalPrice = (addCommas(hours * 500000 + coffee*10000 + tea*15000 + receptionist*100000 + cake*20000)).toString() + ' VND';
                 $('.total-price').html(totalPrice);
-                console.log(totalPrice);
-                console.log(coffee);
+                var totalPriceN =  hours * 500000 + coffee*10000 + tea*15000 + receptionist*100000 + cake*20000;
+                localStorage.setItem("finalPrice", totalPriceN);
             })    
         })
         
@@ -660,6 +681,20 @@
             }
             return x1 + x2;
         }
+
+        var count = 0;
+        $('.btn-book').on('click', function() {
+            $('.slide-time .hours').each(function() {
+                if($(this).hasClass('active')) {
+                    count++;
+                }
+            }) 
+            if(count>=1) {
+                $(location).attr('href','/check-out')
+            } else {
+                alert('Chọn thời gian')
+            }
+        })
     </script>
 </div>
 <style>
