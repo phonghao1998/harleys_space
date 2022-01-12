@@ -10,7 +10,7 @@
     </div>
     <div class="container mt-5">
         <div class="row grid" data-masonry='{"percentPosition": true }'>  
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-sm-6">
                 <div class="new-post">
                     <img src="images/16184724256178248039657929305417.jpg" alt="">
                     <div class="new-post-content">
@@ -20,7 +20,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-sm-6">
                 <div class="new-post">
                     <img src="images/img_recruit_tester.png" alt="">
                     <div class="new-post-content">
@@ -30,7 +30,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-sm-6">
                 <div class="new-post">
                     <img src="images/img_recruit_dev.png" alt="">
                     <div class="new-post-content">
@@ -40,7 +40,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-sm-6">
                 <div class="new-post">
                     <img src="images/img_music_ss_1.png" alt="">
                     <div class="new-post-content">
@@ -50,7 +50,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-sm-6">
                 <div class="new-post">
                     <img src="images/img_lock.png" alt="">
                     <div class="new-post-content">
@@ -63,7 +63,7 @@
         
     
         
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-sm-6">
                 <div class="new-post">
                     <img src="images/img_history_2019_1.png" alt="">
                     <div class="new-post-content">
@@ -73,7 +73,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-sm-6">
                 <div class="new-post">
                     <img src="images/3A500AD5-2109-41F0-A55D-113CED92DBEC.jpeg" alt="">
                     <div class="new-post-content">
@@ -83,7 +83,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-sm-6">
                 <div class="new-post">
                     <img src="images/img_recruit_desginer.png" alt="">
                     <div class="new-post-content">
@@ -93,7 +93,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-sm-6">
                 <div class="new-post">
                     <img src="images/img_game_ninja_1.png" alt="">
                     <div class="new-post-content">
@@ -103,7 +103,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-sm-6">
                 <div class="new-post">
                     <img src="images/photo-2-15931576666751736651643-56-0-855-1280-crop-1593157708587-63728856312282.jpg" alt="">
                     <div class="new-post-content">
@@ -116,7 +116,7 @@
         
     
         
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-sm-6">
                 <div class="new-post">
                     <img src="images/photo-2-15931576666751736651643-56-0-855-1280-crop-1593157708587-63728856312282.jpg" alt="">
                     <div class="new-post-content">
@@ -126,7 +126,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-sm-6">
                 <div class="new-post">
                     <img src="images/16184724256178248039657929305417.jpg" alt="">
                     <div class="new-post-content">
@@ -136,7 +136,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-sm-6">
                 <div class="new-post">
                     <img src="images/Nguyen_Huy_Binh1.jpg" alt="">
                     <div class="new-post-content">
@@ -146,7 +146,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-sm-6">
                 <div class="new-post">
                     <img src="images/img_history_2017_1.png" alt="">
                     <div class="new-post-content">
@@ -156,7 +156,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-sm-6">
                 <div class="new-post">
                     <img src="images/photo1594869164460-1594869164565314344397.jpg" alt="">
                     <div class="new-post-content">
