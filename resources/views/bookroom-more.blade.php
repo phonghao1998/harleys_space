@@ -512,6 +512,11 @@
 
             ]
         });
+
+        var pickLocation = $('#bookRoom .check-out .location h4').html();
+        localStorage.setItem("dataLocation", pickLocation);
+        var pickNumber = $('#bookRoom .check-out .people h4').html();
+        localStorage.setItem("dataNumber", pickNumber);
         var pickDay = $('.slide-date .day.active').attr('val');
         localStorage.setItem("dataDay", pickDay);
         $('.day').each(function() {

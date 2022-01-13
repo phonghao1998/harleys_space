@@ -85,20 +85,32 @@
                     var Price = localStorage.getItem("finalPrice");
                     var Day = localStorage.getItem("dataDay");
                     var Time = localStorage.getItem("dataTime").split(",");
-                    $(function() {
-                        return $('.total-price').html(addCommas(Price) + ' VND');
-                    })
-                    $(function() {
-                        $('.info-detail .day').html(Day);
-                    })
-                    $(function() {
-                        $('.info-detail.time').html(html);
-                    })
-                    // $('#checkOut').on('click', function() {
-                    //     $('.total-price').html(addCommas(Price) + ' VND');
-                    //     $('.info-detail .day').html(Day);
-                    //     $('.info-detail.time').html(html);
+                    var People = localStorage.getItem("dataNumber");
+                    var Location = localStorage.getItem("dataLocation");
+                    // $(function() {
+                    //     return $('.total-price').html(addCommas(Price) + ' VND');
                     // })
+                    // $(function() {
+                    //     return $('.info-detail .day').html(Day);
+                    // })
+                    // $(function() {
+                    //     return $('.info-detail.time').html(html);
+                    // })
+                    // $(function() {
+                    //     return $('.info-detail .location').html(Location);
+                    // })
+                    // $(function() {
+                    //     return $('.info-detail .people').html(People);
+                    // })
+                    $(function() {
+                        return $(function() {
+                            $('.info-detail .people').html(People);
+                            $('.info-detail .location').html(Location);
+                            $('.info-detail.time').html(html);
+                            $('.info-detail .day').html(Day);
+                            $('.total-price').html(addCommas(Price) + ' VND');
+                        })
+                    })
                     
                     var l = Time.length;
                     console.log(html);
@@ -128,7 +140,7 @@
                     <p class="name-room">Vũ Mỹ</p>
                     <div class="info-detail">
                         <img src="images/ic_people.svg" alt="">
-                        <span>200 người</span>
+                        <span class="people"></span>
                     </div>
                     <div class="info-detail time">
                         
@@ -139,7 +151,7 @@
                     </div>
                     <div class="info-detail">
                         <img src="images/ic_map_discount_room.svg" alt="">
-                        <span> số 317</span>
+                        <span class="location"></span>
                     </div>
                     <p class="service">Dịch vụ</p>
                     <div class="info-service">
