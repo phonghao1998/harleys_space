@@ -158,7 +158,7 @@
                         </div>
                         <div class="col-md-9">
                             <div class="multi-card">
-                                <h5 class="text-left">Khu tập yoga, gym</h5>
+                                <h5 class="text-left">Khu tập yoga,gym</h5>
                                 <p class="text-left">Pellentesque tincidunt libero bibendum tristique pulvinar. In ipsum purus, iaculis pretium quam eu, porttitor dignissim.</p>
                             </div>
                         </div>
