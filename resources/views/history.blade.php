@@ -19,7 +19,7 @@
                             </form>
                         </div>
                         <div class="col-md-6 col-12">
-                            <img src="images/img_booking_history.svg" alt="" class="w-100">
+                            <img src="images/img_booking_history.svg" alt="" class="w-100 hide">
                         </div>
                     </div>
                 </div>

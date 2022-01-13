@@ -394,11 +394,7 @@
                             }
                             })
                         })
-                        })
-                        //]]></>
-                        
-                        
-                        
+                        }) 
                     </script>
                 </div>
             </div>
@@ -413,7 +409,7 @@
                 <div class="col-lg-4">
                     <div class="main-text">
                         <h3>
-                        Phòng ưu đãi đặc biệt      
+                            Phòng ưu đãi đặc biệt      
                         </h3>
                         <p>
                             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.

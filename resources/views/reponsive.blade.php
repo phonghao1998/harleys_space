@@ -20,6 +20,10 @@
             display:none;
         }
 
+        .my-container {
+            padding:0 30px;
+        }
+
         #header .nav-header:nth-child(3) {
             background-size: cover;
         }
@@ -64,6 +68,10 @@
 	}
 
 	@media (max-width: 768px) {
+        #history .content-history .hide {
+            display: none;
+        }
+
         .right {
             text-align:left!important;
             margin-top: 20px;
