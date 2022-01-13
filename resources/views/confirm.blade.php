@@ -60,8 +60,16 @@
     for(var i = 0; i < l ; i++) {
         html += '<img src="images/ic_time_infor_booking_detail.svg">' + '<span>' +Time[i]+ '</span>' + '<span>' +Day+ '</span>' + '</br>'
     }
-    $('#confirm').on('click', function() {
-        $('.total-price').html(addCommas(Price) + ' VND');
+    // $('#confirm').on('click', function() {
+    //     $('.total-price').html(addCommas(Price) + ' VND');
+    //     $('.time-info').html(html);
+    // })
+
+    $(function() {
+        return $('.total-price').html(addCommas(Price) + ' VND');
+    })
+
+    $(function() {
         $('.time-info').html(html);
     })
 

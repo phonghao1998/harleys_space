@@ -85,11 +85,20 @@
                     var Price = localStorage.getItem("finalPrice");
                     var Day = localStorage.getItem("dataDay");
                     var Time = localStorage.getItem("dataTime").split(",");
-                    $('#checkOut').on('click', function() {
-                        $('.total-price').html(addCommas(Price) + ' VND');
+                    $(function() {
+                        return $('.total-price').html(addCommas(Price) + ' VND');
+                    })
+                    $(function() {
                         $('.info-detail .day').html(Day);
+                    })
+                    $(function() {
                         $('.info-detail.time').html(html);
                     })
+                    // $('#checkOut').on('click', function() {
+                    //     $('.total-price').html(addCommas(Price) + ' VND');
+                    //     $('.info-detail .day').html(Day);
+                    //     $('.info-detail.time').html(html);
+                    // })
                     
                     var l = Time.length;
                     console.log(html);
