@@ -9,8 +9,29 @@
         .box4-right {
             padding:24px;
         }
+
+        .my-container {
+            padding:0 40px;
+        }
     }
+
     @media (max-width: 992px) {
+        .desktop {
+            display:none;
+        }
+
+        #header .nav-header:nth-child(3) {
+            background-size: cover;
+        }
+
+        #header .nav-header:nth-child(2) {
+            background-size: cover;
+        }
+
+        #header .nav-header:nth-child(4) {
+            background-size: cover;
+        }
+
 		.hide-mid {
 			display: none;
 		}

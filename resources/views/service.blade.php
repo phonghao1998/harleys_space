@@ -202,7 +202,7 @@
     </div>
 </div>
 <style>
-     #header .nav-header:nth-child(3) {
+    #header .nav-header:nth-child(3) {
         background-image: url(images/bg_active_menu_110px.svg);
         background-size: contain;
         background-position: center;
