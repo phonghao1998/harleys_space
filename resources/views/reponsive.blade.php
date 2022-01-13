@@ -68,6 +68,11 @@
 	}
 
 	@media (max-width: 768px) {
+
+        .my-container {
+            padding:0 20px;
+        }
+
         #history .content-history .hide {
             display: none;
         }
@@ -107,7 +112,10 @@
     }
 
 	@media(max-width:575px) {
-       
+        .my-container {
+            padding:0 12px;
+        }
+
 		.img-name h4 {
 			font-size:16px;
 			letter-spacing:3px;

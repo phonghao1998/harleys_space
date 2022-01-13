@@ -424,7 +424,7 @@
         var mm = String(curr.getMonth() + 1).padStart(2, '0'); 
         var checkPoint = 0;
         var html = '';
-        var date_v = '15/01/2022'
+        var date_v  = String(curr.getDate()).padStart(2, '0')+'/'+mm+'/'+curr.getFullYear();
         for (var i = -1; i <= 12+1; i++) {
             var next = new Date(curr.getTime());
             next.setDate(first + i);
