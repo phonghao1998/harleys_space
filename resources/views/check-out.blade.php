@@ -87,21 +87,20 @@
                     var Time = localStorage.getItem("dataTime").split(",");
                     var People = localStorage.getItem("dataNumber");
                     var Location = localStorage.getItem("dataLocation");
-                    // $(function() {
-                    //     return $('.total-price').html(addCommas(Price) + ' VND');
-                    // })
-                    // $(function() {
-                    //     return $('.info-detail .day').html(Day);
-                    // })
-                    // $(function() {
-                    //     return $('.info-detail.time').html(html);
-                    // })
-                    // $(function() {
-                    //     return $('.info-detail .location').html(Location);
-                    // })
-                    // $(function() {
-                    //     return $('.info-detail .people').html(People);
-                    // })
+                    var TimeN = Time.map(function(i) {
+                        return parseInt(i, 10);
+                    });
+                    var TimeS = TimeN.sort((a, b) => a - b);
+                    console.log(Time)
+                    console.log(TimeN)
+                    var l = Time.length;
+                    // for(var i = 1; i < l ; i++) {
+                    //     if(TimeS[i+1]-TimeS[i]== 1) {
+                    //         TimeS.splice(i, 1);
+                    //         i=i-1;
+                    //     }
+                    //     console.log(TimeS)
+                    // }
                     $(function() {
                         return $(function() {
                             $('.info-detail .people').html(People);
@@ -112,11 +111,10 @@
                         })
                     })
                     
-                    var l = Time.length;
                     console.log(html);
                     var html = '';
                     for(var i = 0; i < l ; i++) {
-                        html += '<img src="images/ic_time_infor_booking_detail.svg">' + '<span>' +Time[i]+ '</span>' + '</br>'
+                        html += '<img src="images/ic_time_infor_booking_detail.svg">' + '<span>' + ('0' + TimeS[i]).slice(-2) + ":00 - " + ('0' + (TimeS[i] + 1)).slice(-2) + ":00" + '</span>' + '</br>'
                     }
 
                     function addCommas(nStr)

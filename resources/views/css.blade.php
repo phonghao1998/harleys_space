@@ -18277,7 +18277,10 @@
 	}
 
 	#confirm .detail-img img {
-		max-width:100%;
+		object-fit: cover;
+		object-position:center center;
+		width:100%;
+		height: 100%;
 		border-top-left-radius:10px;
 		border-bottom-left-radius:10px;
 	}

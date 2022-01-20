@@ -517,13 +517,13 @@
         for (var i = 1; i < 23; i++) {
             var html = '';
             if(i == 7){
-                html += '<div class="hours hours-soon" attr_r="'+i+'" val="'+('0' + i).slice(-2) + ":00 - " + ('0' + (i + 1)).slice(-2) + ":00"+'">' + ('0' + i).slice(-2) + ":00 - " + ('0' + (i + 1)).slice(-2) + ":00" + '</div>'
+                html += '<div class="hours hours-soon" attr_r="'+i+'" val="'+i+'">' + ('0' + i).slice(-2) + ":00 - " + ('0' + (i + 1)).slice(-2) + ":00" + '</div>'
             }
             else if(i < 22){
-                html += '<div class="hours hours-soon" attr_r="'+i+'" val="'+('0' + i).slice(-2) + ":00 - " + ('0' + (i + 1)).slice(-2) + ":00"+'">' + ('0' + i).slice(-2) + ":00 - " + ('0' + (i + 1)).slice(-2) + ":00" + '</div>'
+                html += '<div class="hours hours-soon" attr_r="'+i+'" val="'+i+'">' + ('0' + i).slice(-2) + ":00 - " + ('0' + (i + 1)).slice(-2) + ":00" + '</div>'
             }
             else{
-                html += '<div class="hours hours-end" attr_r="'+i+'" val="'+('0' + i).slice(-2) + ":00 - " + ('0' + (i + 1)).slice(-2) + ":00"+'">' + ('0' + i).slice(-2) + ":00 - " + ('0' + (i + 1)).slice(-2) + ":00" + '</div>'
+                html += '<div class="hours hours-end" attr_r="'+i+'" val="'+i+'">' + ('0' + i).slice(-2) + ":00 - " + ('0' + (i + 1)).slice(-2) + ":00" + '</div>'
             }
             $(".slide-time").append(html);
             

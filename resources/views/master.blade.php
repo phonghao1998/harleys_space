@@ -93,6 +93,14 @@
                     </div>
 
                     <script type="text/javascript">
+                        $.ajax({
+                            url: "http://localhost:3000/posts/1",
+                            cache: false,
+                            success: function(html){
+                                console.log(html);
+                            }
+                        });
+
                         (function($) {
 
                             var Defaults = $.fn.select2.amd.require('select2/defaults');

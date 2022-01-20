@@ -15,7 +15,7 @@
                         <img src="/images/png/4f642cde3d0fa1d.jpg" alt="" class="">
                     </a>
                 </div>
-                <div class="col-md-4 d-flex">
+                <div class="col-md-4 d-flex py-4">
                     <div class="info-detail w-100 mr-auto">
                         <h3 class="name-room">
                             Vũ Mỹ
@@ -55,15 +55,17 @@
     var Day = localStorage.getItem("dataDay");
     var Time = localStorage.getItem("dataTime").split(",");
     var l = Time.length;
-    console.log(html);
+    var TimeN = Time.map(function(i) {
+        return parseInt(i, 10);
+    });
+    var TimeS = TimeN.sort((a, b) => a - b);
+    
+    console.log(Time);
     var html = '';
     for(var i = 0; i < l ; i++) {
-        html += '<img src="images/ic_time_infor_booking_detail.svg">' + '<span>' +Time[i]+ '</span>' + '<span>' +Day+ '</span>' + '</br>'
+        html += '<img src="images/ic_time_infor_booking_detail.svg">' + '<span>' + ('0' + TimeS[i]).slice(-2) + ":00 - " + ('0' + (TimeS[i] + 1)).slice(-2) + ":00" +  '</span>' + '<span>' +Day+ '</span>' + '</br>'
     }
-    // $('#confirm').on('click', function() {
-    //     $('.total-price').html(addCommas(Price) + ' VND');
-    //     $('.time-info').html(html);
-    // })
+
 
     $(function() {
         return $('.total-price').html(addCommas(Price) + ' VND');
