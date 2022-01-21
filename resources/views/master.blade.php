@@ -1,5 +1,163 @@
 @extends('app')
 @section('template')
+    <div class="weather">
+        <div class="content">
+            <div class="px-4 py-4">
+                <div class="row">
+                    <div class="col-12">
+                        <input type="text" class="location" placeholder="Tỉnh/ Thành phố">
+                    </div>
+                    <div class="col-12 my-4">
+                        <div class="text-center ">
+                            <span class="city"> 
+                            </span>
+                            <span class="country"></span>
+                        </div>
+                        <p class="date mt-2 text-center"></p>
+                    </div>
+                    <div class="col-8 offset-2">
+                        <div class="temp-box">
+                            <span class="temp"><span class="temp-detail"></span><sup>o</sup>C</span>
+                        </div>
+                    </div>
+                    <div class="col-12 my-4">
+                        <div class="row">
+                            <div class="col-4 detail">
+                                <img src="images/weather/ic_detail_wind_directio.png" alt="" class="wind">
+                                <p class="text-wind"></p>
+                            </div>
+                            <div class="col-4 detail">
+                                <img src="images/weather/ic_detail_humidity@2x.png" alt="" class="humi">
+                                <p class="text-humi"></p>
+                            </div>
+                            <div class="col-4 detail">
+                                <img src="images/weather/ic_detail_feel_like@2x.png" alt="" class="feel">
+                                <p class="text-feel"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .weather {
+            display:flex;
+            height:700px;
+            padding-top: 80px;
+            color: #FFF;
+        }
+        .weather .content {
+            margin:auto;
+            width:400px;
+            height:500px;
+            border-radius:20px;
+            background-image:url(images/weather/clear.jpg);
+            background-repeat:no-repeat;
+            background-size: cover;
+            background-position:center;
+            transition:0.4s;
+        }
+
+        .weather .content .location {
+            width:100%;
+            border-radius:15px 0 15px 0;
+            padding:8px 16px;
+            font-size:14px;
+            outline:none;
+            border:none;
+            background-color:rgba(255,255,255,0.4);
+            transition: 0.4s;
+            box-shadow: 0 5px rgba(0,0, 0,0.2);
+            color:#fff;
+        }
+
+        .weather .content .location:focus {
+            border-radius:0px 15px 0px 15px;
+        }
+
+        .weather .content .city, .weather .content .country {
+            font-size:36px!important;
+            font-weight:550;
+            text-shadow:3px 3px rgba(0,0, 0,0.2);
+        }
+
+        .weather .content .temp-box {
+            border-radius:16px;
+            box-shadow:2px 2px rgba(0,0, 0,0.2);
+            background-color:rgba(255,255,255,0.4);
+            padding:20px 0;
+            display: flex;
+
+        }
+
+        .weather .content .temp-box .temp {
+            font-size:70px;
+            font-weight:bold;
+            text-shadow:4px 4px rgba(0,0,0,0.2);
+            margin:auto;
+        }
+
+        .weather .content .detail {
+            text-align:center;
+        }
+
+        .weather .content .detail img {
+            width:40%;
+        }
+
+        .weather .content .detail img.wind {
+            width:50%;
+        }
+
+        .weather .content .detail p {
+            font-size: 16px;
+            margin-top: 12px;
+        }
+
+    </style>
+
+    <script>
+        function getData(city) {
+            let urlApi = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=24956a34519e69d9b7912f0324486af3`
+            $.ajax({
+               url: urlApi,
+               success: function(res){
+                       $(".city").html(res.name)
+                       $(".country").html(', ' + res.sys.country)
+                       $(".temp-detail").html(Math.round(res.main.temp - 272.15))
+                       $(".text-wind").html(res.wind.speed + ' m/s')
+                       $(".text-humi").html(res.main.humidity + ' %')
+                       $(".text-feel").html(Math.round(res.main.feels_like - 272.15))
+                       let date = new Date().toLocaleString('vi')
+                       $('.date').html(date)
+                       var temp = Math.round(res.main.temp - 272.15)
+                       let citySearch = $('.location').val('');
+                       if (temp <=20) {
+                            $('.weather .content').css("background-image", "url(images/weather/cloudy.jpg)");  
+                       }
+                       if (temp <=30 && temp >20) {
+                            $('.weather .content').css("background-image", "url(images/weather/default_4.jpg)");  
+                       }
+                       if (temp > 30) {
+                            $('.weather .content').css("background-image", "url(images/weather/clear.jpg)");  
+                       }    
+               },
+               error: function() {
+                   alert('Nhập lai tên Tỉnh / Thành phố')
+               }
+            })
+        }
+        
+        $(".location").keypress(function(e){
+            if(e.which == 13) {
+                let citySearch = $('.location').val();
+                getData(citySearch);
+            }
+        })
+
+        getData('hung yen')
+    </script>
     <div class="box1 bg d-flex" style="background-image:url(/images/png/img_home_hero.jpg);height:600px">
         <div class="container mr-auto">
             <div class="row">
@@ -93,13 +251,7 @@
                     </div>
 
                     <script type="text/javascript">
-                        $.ajax({
-                            url: "http://localhost:3000/posts/1",
-                            cache: false,
-                            success: function(html){
-                                console.log(html);
-                            }
-                        });
+                       
 
                         (function($) {
 

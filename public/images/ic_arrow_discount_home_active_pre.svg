@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="115" height="115" viewBox="0 0 115 115">
+  <defs>
+    <filter id="Ellipse_8" x="0" y="0" width="115" height="115" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur"/>
+      <feFlood flood-color="#999" flood-opacity="0.149"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="ic_arrow_discount_home_active_pre" transform="translate(-588.5 -1559.5)">
+    <g transform="matrix(1, 0, 0, 1, 588.5, 1559.5)" filter="url(#Ellipse_8)">
+      <circle id="Ellipse_8-2" data-name="Ellipse 8" cx="35" cy="35" r="35" transform="translate(22.5 17.5)" fill="#fff"/>
+    </g>
+    <g id="ic_arrow_discount_room_inactive" transform="translate(638 1597)">
+      <g id="Group_154" data-name="Group 154" transform="translate(0 0)">
+        <path id="Path_94" data-name="Path 94" d="M118.074,13.769,131.551.33a1.129,1.129,0,1,1,1.595,1.6l-12.675,12.64,12.675,12.64a1.129,1.129,0,0,1-1.6,1.6L118.074,15.369a1.129,1.129,0,0,1,0-1.6Z" transform="translate(-117.742 0)" fill="#750d1c"/>
+      </g>
+    </g>
+  </g>
+</svg>
