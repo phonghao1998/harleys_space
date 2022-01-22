@@ -6,6 +6,7 @@
                 <div class="row">
                     <div class="col-12">
                         <input type="text" class="location" placeholder="Tỉnh/ Thành phố">
+                        <img src="images/weather/search_delete@2x.png" alt="" class="delete">
                     </div>
                     <div class="col-12 my-4">
                         <div class="text-center ">
@@ -70,6 +71,17 @@
             transition: 0.4s;
             box-shadow: 0 5px rgba(0,0, 0,0.2);
             color:#fff;
+            position: relative;
+        }
+
+        .weather .content .delete {
+            position: absolute;
+            width:30px;
+            height: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 30px;
+            cursor: pointer;
         }
 
         .weather .content .location:focus {
@@ -155,8 +167,11 @@
                 getData(citySearch);
             }
         })
-
         getData('hung yen')
+        $('.delete').on('click', function() {
+            $('.location').val('')
+            $('.location').focus()
+        })
     </script>
     <div class="box1 bg d-flex" style="background-image:url(/images/png/img_home_hero.jpg);height:600px">
         <div class="container mr-auto">
