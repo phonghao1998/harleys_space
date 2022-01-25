@@ -206,7 +206,6 @@
         background-image: url(images/bg_active_menu_110px.svg);
         background-size: contain;
         background-position: center;
-        background-repeat: no-repeat;
         
     }
     #header .nav-header:nth-child(3) a {

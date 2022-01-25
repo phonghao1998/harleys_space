@@ -40,6 +40,18 @@
                 </div>
             </div>
         </div>
+        <!-- <div class="todo">
+            <div class="" style="position: relative;">
+                <input type="text" class="todo-value">
+                <button class="btn btn-primary btn-add">ADD</button>
+            </div>
+            <ul class="todo-list">
+                <li>
+                    <span>aa</span>
+                    <img src="images/weather/search_delete@2x.png" alt="" class="delete">
+                </li>
+            </ul>
+        </div> -->
     </div>
     <style>
         .weather {
@@ -60,7 +72,57 @@
             transition:0.4s;
         }
 
-        .weather .content .location {
+        .weather .todo {
+            margin:auto;
+            width:400px;
+            height:500px;
+            background:#609beb;
+            padding:20px;
+            color: rgba(0, 0, 0, 0.7);
+            border-radius:20px;
+        }
+
+        .weather .todo .todo-value {
+            width:100%;
+            padding:8px 16px;
+            font-size:14px;
+            outline:none;
+            border:none;
+            border-radius:8px;
+        }
+
+        .weather .todo .btn-add {
+            position: absolute;
+            right: 0;
+            top: 0;
+            border-radius:8px;
+        }
+
+        .weather .todo .todo-list li {
+            padding:6px 10px;
+            border-radius:6px;
+            border: 1px solid rgba(255,255,255,0.2);
+            background:#fff;
+            margin: 10px 0;
+            position: relative;
+        }
+
+        .weather .todo .todo-list li span {
+            font-size:16px;
+            line-height:16px;
+        }
+
+        .weather .todo .delete {
+            position: absolute;
+            width:30px;
+            height: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 10px;
+            cursor: pointer;
+        }
+
+        .weather .content .location  {
             width:100%;
             border-radius:15px 0 15px 0;
             padding:8px 16px;
@@ -68,7 +130,7 @@
             outline:none;
             border:none;
             background-color:rgba(255,255,255,0.4);
-            transition: 0.4s;
+            transition: 0.6s;
             box-shadow: 0 5px rgba(0,0, 0,0.2);
             color:#fff;
             position: relative;
@@ -130,6 +192,11 @@
     </style>
 
     <script>
+        // var x = 300
+        // for (var i =0;i<24;i++) {
+        //     x = x + 0.03*x
+        //     console.log(x)
+        // }
         function getData(city) {
             let urlApi = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=24956a34519e69d9b7912f0324486af3`
             $.ajax({
@@ -141,18 +208,18 @@
                        $(".text-wind").html(res.wind.speed + ' m/s')
                        $(".text-humi").html(res.main.humidity + ' %')
                        $(".text-feel").html(Math.round(res.main.feels_like - 272.15))
-                       let date = new Date().toLocaleString('vi')
+                       let date = new Date().toLocaleString()
                        $('.date').html(date)
-                       var temp = Math.round(res.main.temp - 272.15)
+                       let temp = Math.round(res.main.temp - 272.15)
                        let citySearch = $('.location').val('');
-                       if (temp <=20) {
+                       if (temp <=15) {
                             $('.weather .content').css("background-image", "url(images/weather/cloudy.jpg)");  
                        }
-                       if (temp <=30 && temp >20) {
-                            $('.weather .content').css("background-image", "url(images/weather/default_4.jpg)");  
+                       if (temp <=25 && temp >15) {
+                            $('.weather .content').css("background-image", "url(images/weather/foggy.jpg)");  
                        }
-                       if (temp > 30) {
-                            $('.weather .content').css("background-image", "url(images/weather/clear.jpg)");  
+                       if (temp > 25) {
+                            $('.weather .content').css("background-image", "url(images/weather/hurricanes.jpg)");  
                        }    
                },
                error: function() {
@@ -1205,8 +1272,6 @@
         #header .nav-header:first-child {
             background-image: url(images/bg_active_menu_110px.svg);
             background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
            
         }
         #header .nav-header:first-child a {
